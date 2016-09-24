@@ -29,7 +29,7 @@
 		7511D61C1D964A1D008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D61F1D964A1D008016CF /* TDRedux.swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.swift.h; sourceTree = "<group>"; };
 		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7511D6251D964A1D008016CF /* TDRedux.swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDRedux.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7511D6251D964A1D008016CF /* TDReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D62A1D964A1D008016CF /* TDReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDReduxTests.swift; sourceTree = "<group>"; };
 		7511D62C1D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511D6361D964A3C008016CF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				7511D61C1D964A1D008016CF /* TDRedux.framework */,
-				7511D6251D964A1D008016CF /* TDRedux.swiftTests.xctest */,
+				7511D6251D964A1D008016CF /* TDReduxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			);
 			name = TDRedux.swiftTests;
 			productName = TDRedux.swiftTests;
-			productReference = 7511D6251D964A1D008016CF /* TDRedux.swiftTests.xctest */;
+			productReference = 7511D6251D964A1D008016CF /* TDReduxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -387,7 +387,7 @@
 				INFOPLIST_FILE = TDRedux.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TDReduxTests;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -399,7 +399,7 @@
 				INFOPLIST_FILE = TDRedux.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TDReduxTests;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
