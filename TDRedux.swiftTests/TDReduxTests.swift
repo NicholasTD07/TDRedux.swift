@@ -1,6 +1,6 @@
 //
-//  TDRedux_swiftTests.swift
-//  TDRedux.swiftTests
+//  TDReduxTests.swift
+//  TDReduxTests
 //
 //  Created by Nicholas Tian on 24/09/2016.
 //  Copyright © 2016 nicktd. All rights reserved.
@@ -9,8 +9,8 @@
 import XCTest
 import TDRedux
 
-class TDRedux_swiftTests: XCTestCase {
-    enum CounterActions: Action {
+class TDReduxTests: XCTestCase {
+    enum CounterActions: TDRedux.Action {
         case Increase
         case Decrease
     }
@@ -26,10 +26,12 @@ class TDRedux_swiftTests: XCTestCase {
         }
     }
 
-    var counterStore: Store<Int>!
+    typealias IntStore = TDRedux.Store<Int>
+
+    var counterStore: IntStore!
 
     override func setUp() {
-        counterStore = Store<Int>.init(with: counterReducer)
+        counterStore = IntStore.init(with: counterReducer)
     }
 
     func testBasics() {
@@ -37,7 +39,7 @@ class TDRedux_swiftTests: XCTestCase {
     }
 
     func testNoopCombineReducers() {
-        struct SomeAction: Action { }
+        struct SomeAction: TDRedux.Action { }
 
         // This will never be executed because of its SomeAction type.
         let someReducer = Reducer(initialState: 0) { (state: Int, action: SomeAction) -> Int in
@@ -46,7 +48,7 @@ class TDRedux_swiftTests: XCTestCase {
 
         let combinedReducers = combineReducers([counterReducer, someReducer])
 
-        self.counterStore = Store<Int>.init(with: combinedReducers)
+        self.counterStore = IntStore.init(with: combinedReducers)
 
         _test()
     }
@@ -59,7 +61,7 @@ class TDRedux_swiftTests: XCTestCase {
 
         let combinedReducers = combineReducers([counterReducer, someReducer])
 
-        self.counterStore = Store<Int>.init(with: combinedReducers)
+        self.counterStore = IntStore.init(with: combinedReducers)
 
         // initial state is -1
         XCTAssert(counterStore.state == -1)
