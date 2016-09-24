@@ -175,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux.swift" */;
+			buildConfigurationList = 7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -407,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux.swift" */ = {
+		7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511D62E1D964A1D008016CF /* Debug */,
