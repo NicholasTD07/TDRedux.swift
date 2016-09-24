@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TDRedux
+import TDRedux
 
 class TDRedux_swiftTests: XCTestCase {
     func testExample() {

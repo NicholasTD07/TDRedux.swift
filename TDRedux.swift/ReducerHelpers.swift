@@ -19,7 +19,7 @@
 /// - parameter reducer:      the reducer being wrapped
 ///
 /// - returns: A reducer function
-func Reducer<State, SpecificActionType>(
+public func Reducer<State, SpecificActionType>(
     initialState: State,
     reducer: @escaping (State, SpecificActionType) -> State
     ) -> (State?, Any) -> State {
@@ -37,7 +37,9 @@ func Reducer<State, SpecificActionType>(
 /// - parameter reducers: an array of `Reducer`s who takes and returns the same type of `State`
 ///
 /// - returns: A reducer function
-func combineReducers<State>(_ reducers: [(State?, Any) -> State]) -> (State?, Any) -> State {
+public func combineReducers<State>(
+    _ reducers: [(State?, Any) -> State]) -> (State?, Any
+    ) -> State {
     return { (state: State?, action: Any) -> State in
         return reducers.reduce(state) { (state, reducer) -> State! in
             return reducer(state, action)

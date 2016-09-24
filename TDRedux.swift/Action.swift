@@ -6,6 +6,8 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-typealias Action = Any
+public typealias Action = Any
 
-struct InitialAction: Action { }
+public struct InitialAction: Action {
+    public init() { }
+}

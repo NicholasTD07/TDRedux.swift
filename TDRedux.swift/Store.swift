@@ -6,27 +6,27 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-class Store<State> {
-    var state: State
-    typealias Reducer = (State?, Action) -> State
-    final let reducer: Reducer
+public class Store<State> {
+    public var state: State
+    public typealias Reducer = (State?, Action) -> State
+    public final let reducer: Reducer
 
-    init(with reducer: @escaping Reducer) {
+    public init(with reducer: @escaping Reducer) {
         self.state = reducer(nil, InitialAction())
         self.reducer = reducer
     }
 
-    typealias Subscriber = (Store) -> ()
-    final var subscribers = [Subscriber]()
+    public typealias Subscriber = (Store) -> ()
+    public final var subscribers = [Subscriber]()
 
-    final func dispatch(_ action: Action) {
+    public final func dispatch(_ action: Action) {
         self.state = reducer(state, action)
         subscribers.forEach {
             $0(self)
         }
     }
 
-    final func subscribe(with subscriber: @escaping Subscriber) {
+    public final func subscribe(with subscriber: @escaping Subscriber) {
         subscribers.append(subscriber)
         subscriber(self)
     }
