@@ -7,17 +7,15 @@
 //
 
 public class Store<State> {
-    public var state: State
-    public typealias Reducer = (State?, Action) -> State
+    public final var state: State
     public final let reducer: Reducer
+    public final var subscribers = [Subscriber]()
 
     public init(with reducer: @escaping Reducer) {
         self.state = reducer(nil, InitialAction())
         self.reducer = reducer
     }
 
-    public typealias Subscriber = (Store) -> ()
-    public final var subscribers = [Subscriber]()
 
     public final func dispatch(_ action: Action) {
         self.state = reducer(state, action)
@@ -30,4 +28,7 @@ public class Store<State> {
         subscribers.append(subscriber)
         subscriber(self)
     }
+
+    public typealias Subscriber = (Store) -> ()
+    public typealias Reducer = (State?, Action) -> State
 }
