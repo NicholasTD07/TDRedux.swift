@@ -51,6 +51,27 @@ class TDRedux_swiftTests: XCTestCase {
         _test()
     }
 
+    func testCombineReducersInAction() {
+        typealias NonSpecialType = Any
+        let someReducer = Reducer(initialState: 0) { (state: Int, action: NonSpecialType) -> Int in
+            return -1
+        }
+
+        let combinedReducers = combineReducers([counterReducer, someReducer])
+
+        self.counterStore = Store<Int>.init(with: combinedReducers)
+
+        // initial state is -1
+        XCTAssert(counterStore.state == -1)
+
+        // dispatch ANYTHING will make state be -1
+        [InitialAction(), CounterActions.Increase, CounterActions.Decrease].forEach {
+            counterStore.dispatch($0)
+            XCTAssert(counterStore.state == -1)
+
+        }
+    }
+
     func _test() {
         // initial state is 0
         XCTAssert(counterStore.state == 0)
