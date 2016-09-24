@@ -6,4 +6,6 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-import Foundation
+typealias Action = Any
+
+struct InitialAction: Action { }

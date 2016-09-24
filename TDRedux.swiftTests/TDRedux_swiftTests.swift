@@ -7,30 +7,61 @@
 //
 
 import XCTest
-@testable import TDRedux_swift
+@testable import TDRedux
 
 class TDRedux_swiftTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        enum CounterActions: Action {
+            case Increase
+            case Decrease
         }
+
+        let counterReducer = Reducer(initialState: 0) { (state: Int, action: CounterActions) -> Int in
+            print("counter reducer")
+
+            switch action {
+            case .Increase:
+                return state + 1
+            case .Decrease:
+                return state - 1
+            }
+        }
+
+//        struct SomeAction: Action { }
+//
+//        // This will never be executed because of its SomeAction type.
+//        let someReducer = Reducer(initialState: 0) { (state: Int, action: SomeAction) -> Int in
+//            return -1
+//        }
+//
+//        let combinedReducers = combineReducers([counterReducer, someReducer])
+
+        let counterStore = Store<Int>.init(with: counterReducer)
+        // ==== Test Suite ====
+
+        // initial state is 0
+        XCTAssert(counterStore.state == 0)
+
+        // dispatch unknown actions does not affect the state
+        counterStore.dispatch(InitialAction())
+        XCTAssert(counterStore.state == 0)
+
+        // dispatch Increase will increase the state
+        counterStore.dispatch(CounterActions.Increase)
+        XCTAssert(counterStore.state == 1)
+
+        // dispatch Decrease will increase the state
+        counterStore.dispatch(CounterActions.Decrease)
+        XCTAssert(counterStore.state == 0)
+
+        var counter: Int = -1000
+        counterStore.subscribe { (store: Store<Int>) in
+            counter = store.state
+        }
+        XCTAssert(counter == counterStore.state)
+
+        // when state is updated, subscirbers will get notified of the new state
+        counterStore.dispatch(CounterActions.Increase)
+        XCTAssert(counter == counterStore.state)
     }
-    
 }

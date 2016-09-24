@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7511D6261D964A1D008016CF /* TDRedux.swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D61C1D964A1D008016CF /* TDRedux.swift.framework */; };
+		7511D6261D964A1D008016CF /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D61C1D964A1D008016CF /* TDRedux.framework */; };
 		7511D62B1D964A1D008016CF /* TDRedux_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDRedux_swiftTests.swift */; };
 		7511D62D1D964A1D008016CF /* TDRedux.swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7511D6371D964A3C008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
+		7511D63A1D964B03008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
+		7511D63C1D964BAA008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7511D61C1D964A1D008016CF /* TDRedux.swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7511D61C1D964A1D008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D61F1D964A1D008016CF /* TDRedux.swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.swift.h; sourceTree = "<group>"; };
 		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511D6251D964A1D008016CF /* TDRedux.swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDRedux.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D62A1D964A1D008016CF /* TDRedux_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRedux_swiftTests.swift; sourceTree = "<group>"; };
 		7511D62C1D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7511D6361D964A3C008016CF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7511D6391D964B03008016CF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		7511D63B1D964BAA008016CF /* ReducerHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReducerHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7511D6261D964A1D008016CF /* TDRedux.swift.framework in Frameworks */,
+				7511D6261D964A1D008016CF /* TDRedux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				7511D61E1D964A1D008016CF /* TDRedux.swift */,
-				7511D6291D964A1D008016CF /* TDRedux.swiftTests */,
+				7511D6291D964A1D008016CF /* Tests */,
 				7511D61D1D964A1D008016CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,7 +68,7 @@
 		7511D61D1D964A1D008016CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7511D61C1D964A1D008016CF /* TDRedux.swift.framework */,
+				7511D61C1D964A1D008016CF /* TDRedux.framework */,
 				7511D6251D964A1D008016CF /* TDRedux.swiftTests.xctest */,
 			);
 			name = Products;
@@ -71,19 +77,31 @@
 		7511D61E1D964A1D008016CF /* TDRedux.swift */ = {
 			isa = PBXGroup;
 			children = (
-				7511D61F1D964A1D008016CF /* TDRedux.swift.h */,
-				7511D6201D964A1D008016CF /* Info.plist */,
+				7511D6391D964B03008016CF /* Action.swift */,
+				7511D6361D964A3C008016CF /* Store.swift */,
+				7511D63B1D964BAA008016CF /* ReducerHelpers.swift */,
+				7511D6381D964AF0008016CF /* Support */,
 			);
 			path = TDRedux.swift;
 			sourceTree = "<group>";
 		};
-		7511D6291D964A1D008016CF /* TDRedux.swiftTests */ = {
+		7511D6291D964A1D008016CF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				7511D62A1D964A1D008016CF /* TDRedux_swiftTests.swift */,
 				7511D62C1D964A1D008016CF /* Info.plist */,
 			);
+			name = Tests;
 			path = TDRedux.swiftTests;
+			sourceTree = "<group>";
+		};
+		7511D6381D964AF0008016CF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7511D61F1D964A1D008016CF /* TDRedux.swift.h */,
+				7511D6201D964A1D008016CF /* Info.plist */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +133,7 @@
 			);
 			name = TDRedux.swift;
 			productName = TDRedux.swift;
-			productReference = 7511D61C1D964A1D008016CF /* TDRedux.swift.framework */;
+			productReference = 7511D61C1D964A1D008016CF /* TDRedux.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7511D6241D964A1D008016CF /* TDRedux.swiftTests */ = {
@@ -148,6 +166,7 @@
 				TargetAttributes = {
 					7511D61B1D964A1D008016CF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					7511D6241D964A1D008016CF = {
@@ -196,6 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7511D6371D964A3C008016CF /* Store.swift in Sources */,
+				7511D63C1D964BAA008016CF /* ReducerHelpers.swift in Sources */,
+				7511D63A1D964B03008016CF /* Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +342,7 @@
 		7511D6311D964A1D008016CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -327,10 +350,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TDRedux.swift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +363,7 @@
 		7511D6321D964A1D008016CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -345,9 +371,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TDRedux.swift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -356,6 +383,7 @@
 		7511D6341D964A1D008016CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TDRedux.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swiftTests";
@@ -367,6 +395,7 @@
 		7511D6351D964A1D008016CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TDRedux.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swiftTests";
