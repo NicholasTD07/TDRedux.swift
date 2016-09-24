@@ -1,4 +1,4 @@
-# TDRedux.swift
+# TDRedux
 
 Yet another Redux written in Swift
 
