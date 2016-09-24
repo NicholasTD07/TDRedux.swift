@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7511D6261D964A1D008016CF /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D61C1D964A1D008016CF /* TDRedux.framework */; };
-		7511D62B1D964A1D008016CF /* TDRedux_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDRedux_swiftTests.swift */; };
+		7511D62B1D964A1D008016CF /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
 		7511D62D1D964A1D008016CF /* TDRedux.swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7511D6371D964A3C008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
 		7511D63A1D964B03008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
@@ -30,7 +30,7 @@
 		7511D61F1D964A1D008016CF /* TDRedux.swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.swift.h; sourceTree = "<group>"; };
 		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511D6251D964A1D008016CF /* TDRedux.swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDRedux.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7511D62A1D964A1D008016CF /* TDRedux_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRedux_swiftTests.swift; sourceTree = "<group>"; };
+		7511D62A1D964A1D008016CF /* TDReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDReduxTests.swift; sourceTree = "<group>"; };
 		7511D62C1D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511D6361D964A3C008016CF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		7511D6391D964B03008016CF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		7511D6291D964A1D008016CF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7511D62A1D964A1D008016CF /* TDRedux_swiftTests.swift */,
+				7511D62A1D964A1D008016CF /* TDReduxTests.swift */,
 				7511D62C1D964A1D008016CF /* Info.plist */,
 			);
 			name = Tests;
@@ -225,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7511D62B1D964A1D008016CF /* TDRedux_swiftTests.swift in Sources */,
+				7511D62B1D964A1D008016CF /* TDReduxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
