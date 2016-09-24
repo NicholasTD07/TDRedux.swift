@@ -10,35 +10,48 @@ import XCTest
 import TDRedux
 
 class TDRedux_swiftTests: XCTestCase {
-    func testExample() {
-        enum CounterActions: Action {
-            case Increase
-            case Decrease
+    enum CounterActions: Action {
+        case Increase
+        case Decrease
+    }
+
+    let counterReducer = Reducer(initialState: 0) { (state: Int, action: CounterActions) -> Int in
+        print("counter reducer")
+
+        switch action {
+        case .Increase:
+            return state + 1
+        case .Decrease:
+            return state - 1
+        }
+    }
+
+    var counterStore: Store<Int>!
+
+    override func setUp() {
+        counterStore = Store<Int>.init(with: counterReducer)
+    }
+
+    func testBasics() {
+        _test()
+    }
+
+    func testNoopCombineReducers() {
+        struct SomeAction: Action { }
+
+        // This will never be executed because of its SomeAction type.
+        let someReducer = Reducer(initialState: 0) { (state: Int, action: SomeAction) -> Int in
+            return -1
         }
 
-        let counterReducer = Reducer(initialState: 0) { (state: Int, action: CounterActions) -> Int in
-            print("counter reducer")
+        let combinedReducers = combineReducers([counterReducer, someReducer])
 
-            switch action {
-            case .Increase:
-                return state + 1
-            case .Decrease:
-                return state - 1
-            }
-        }
+        self.counterStore = Store<Int>.init(with: combinedReducers)
 
-//        struct SomeAction: Action { }
-//
-//        // This will never be executed because of its SomeAction type.
-//        let someReducer = Reducer(initialState: 0) { (state: Int, action: SomeAction) -> Int in
-//            return -1
-//        }
-//
-//        let combinedReducers = combineReducers([counterReducer, someReducer])
+        _test()
+    }
 
-        let counterStore = Store<Int>.init(with: counterReducer)
-        // ==== Test Suite ====
-
+    func _test() {
         // initial state is 0
         XCTAssert(counterStore.state == 0)
 
