@@ -1,5 +1,5 @@
 //
-//  TDRedux.swift.h
+//  TDRedux.h
 //  TDRedux.swift
 //
 //  Created by Nicholas Tian on 24/09/2016.
