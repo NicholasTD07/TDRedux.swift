@@ -118,9 +118,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7511D61B1D964A1D008016CF /* TDRedux.swift */ = {
+		7511D61B1D964A1D008016CF /* TDRedux */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux.swift" */;
+			buildConfigurationList = 7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux" */;
 			buildPhases = (
 				7511D6171D964A1D008016CF /* Sources */,
 				7511D6181D964A1D008016CF /* Frameworks */,
@@ -131,14 +131,14 @@
 			);
 			dependencies = (
 			);
-			name = TDRedux.swift;
+			name = TDRedux;
 			productName = TDRedux.swift;
 			productReference = 7511D61C1D964A1D008016CF /* TDRedux.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7511D6241D964A1D008016CF /* TDRedux.swiftTests */ = {
+		7511D6241D964A1D008016CF /* TDReduxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux.swiftTests" */;
+			buildConfigurationList = 7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests" */;
 			buildPhases = (
 				7511D6211D964A1D008016CF /* Sources */,
 				7511D6221D964A1D008016CF /* Frameworks */,
@@ -149,7 +149,7 @@
 			dependencies = (
 				7511D6281D964A1D008016CF /* PBXTargetDependency */,
 			);
-			name = TDRedux.swiftTests;
+			name = TDReduxTests;
 			productName = TDRedux.swiftTests;
 			productReference = 7511D6251D964A1D008016CF /* TDReduxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -187,8 +187,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7511D61B1D964A1D008016CF /* TDRedux.swift */,
-				7511D6241D964A1D008016CF /* TDRedux.swiftTests */,
+				7511D61B1D964A1D008016CF /* TDRedux */,
+				7511D6241D964A1D008016CF /* TDReduxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		7511D6281D964A1D008016CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7511D61B1D964A1D008016CF /* TDRedux.swift */;
+			target = 7511D61B1D964A1D008016CF /* TDRedux */;
 			targetProxy = 7511D6271D964A1D008016CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -352,7 +352,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDRedux;
 				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -373,7 +373,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDRedux;
 				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -386,7 +386,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TDRedux.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swiftTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDReduxTests;
 				PRODUCT_NAME = TDReduxTests;
 				SWIFT_VERSION = 3.0;
 			};
@@ -398,7 +398,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TDRedux.swiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-swiftTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDReduxTests;
 				PRODUCT_NAME = TDReduxTests;
 				SWIFT_VERSION = 3.0;
 			};
@@ -416,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux.swift" */ = {
+		7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511D6311D964A1D008016CF /* Debug */,
@@ -424,7 +424,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux.swiftTests" */ = {
+		7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511D6341D964A1D008016CF /* Debug */,
