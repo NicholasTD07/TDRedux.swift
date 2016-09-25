@@ -4,6 +4,10 @@ xcode_project: TDRedux.xcodeproj
 xcode_scheme: TDRedux
 
 script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+
   - xcodebuild \
     -project TDRedux.xcodeproj \
     -scheme TDRedux \
@@ -11,3 +15,5 @@ script:
     GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
     GCC_GENERATE_TEST_COVERAGE_FILES=YES \
     test | xcpretty -c
+
+
