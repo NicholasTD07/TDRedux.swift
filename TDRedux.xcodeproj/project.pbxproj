@@ -14,6 +14,7 @@
 		7511D63A1D964B03008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
 		7511D63C1D964BAA008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
 		7511D6571D97CF9C008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7511D6811D97DD3A008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		7511D6391D964B03008016CF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		7511D63B1D964BAA008016CF /* ReducerHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReducerHelpers.swift; sourceTree = "<group>"; };
 		7511D64F1D97CDCC008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7511D6791D97DCF1008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7511D6751D97DCF1008016CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +89,7 @@
 				7511D61C1D964A1D008016CF /* TDRedux.framework */,
 				7511D6251D964A1D008016CF /* TDReduxTests.xctest */,
 				7511D64F1D97CDCC008016CF /* TDRedux.framework */,
+				7511D6791D97DCF1008016CF /* TDRedux.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +140,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7511D6571D97CF9C008016CF /* TDRedux.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7511D6761D97DCF1008016CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7511D6811D97DD3A008016CF /* TDRedux.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +208,24 @@
 			productReference = 7511D64F1D97CDCC008016CF /* TDRedux.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7511D6781D97DCF1008016CF /* TDRedux-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7511D6801D97DCF1008016CF /* Build configuration list for PBXNativeTarget "TDRedux-tvOS" */;
+			buildPhases = (
+				7511D6741D97DCF1008016CF /* Sources */,
+				7511D6751D97DCF1008016CF /* Frameworks */,
+				7511D6761D97DCF1008016CF /* Headers */,
+				7511D6771D97DCF1008016CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TDRedux-tvOS";
+			productName = "TDRedux-tvOS";
+			productReference = 7511D6791D97DCF1008016CF /* TDRedux.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +249,10 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
+					7511D6781D97DCF1008016CF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux" */;
@@ -229,6 +269,7 @@
 			targets = (
 				7511D61B1D964A1D008016CF /* TDRedux-iOS */,
 				7511D64E1D97CDCC008016CF /* TDRedux-watchOS */,
+				7511D6781D97DCF1008016CF /* TDRedux-tvOS */,
 				7511D6241D964A1D008016CF /* TDReduxTests */,
 			);
 		};
@@ -250,6 +291,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7511D64D1D97CDCC008016CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7511D6771D97DCF1008016CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,6 +326,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7511D64A1D97CDCC008016CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7511D6741D97DCF1008016CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,11 +458,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TDRedux/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TDRedux/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDRedux;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-iOS";
 				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -424,11 +479,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TDRedux/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TDRedux/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDRedux;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-iOS";
 				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -477,7 +532,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -499,7 +554,49 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		7511D67E1D97DCF1008016CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/TDRedux/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-tvOS";
+				PRODUCT_NAME = TDRedux;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7511D67F1D97DCF1008016CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/TDRedux/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-tvOS";
+				PRODUCT_NAME = TDRedux;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -541,6 +638,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7511D6801D97DCF1008016CF /* Build configuration list for PBXNativeTarget "TDRedux-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7511D67E1D97DCF1008016CF /* Debug */,
+				7511D67F1D97DCF1008016CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
