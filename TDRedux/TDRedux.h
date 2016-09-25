@@ -6,8 +6,6 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 //! Project version number for TDRedux.
 FOUNDATION_EXPORT double TDReduxVersionNumber;
 
