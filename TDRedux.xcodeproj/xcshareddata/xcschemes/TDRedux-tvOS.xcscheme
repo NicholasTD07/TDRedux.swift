@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7511D6781D97DCF1008016CF"
-               BuildableName = "TDRedux-tvOS.framework"
+               BuildableName = "TDRedux.framework"
                BlueprintName = "TDRedux-tvOS"
                ReferencedContainer = "container:TDRedux.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7511D6781D97DCF1008016CF"
-            BuildableName = "TDRedux-tvOS.framework"
+            BuildableName = "TDRedux.framework"
             BlueprintName = "TDRedux-tvOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7511D6781D97DCF1008016CF"
-            BuildableName = "TDRedux-tvOS.framework"
+            BuildableName = "TDRedux.framework"
             BlueprintName = "TDRedux-tvOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7511D6781D97DCF1008016CF"
-            BuildableName = "TDRedux-tvOS.framework"
+            BuildableName = "TDRedux.framework"
             BlueprintName = "TDRedux-tvOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
