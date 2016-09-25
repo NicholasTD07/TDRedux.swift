@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7511D61B1D964A1D008016CF"
                BuildableName = "TDRedux.framework"
-               BlueprintName = "TDRedux"
+               BlueprintName = "TDRedux-iOS"
                ReferencedContainer = "container:TDRedux.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7511D61B1D964A1D008016CF"
             BuildableName = "TDRedux.framework"
-            BlueprintName = "TDRedux"
+            BlueprintName = "TDRedux-iOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,7 +67,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7511D61B1D964A1D008016CF"
             BuildableName = "TDRedux.framework"
-            BlueprintName = "TDRedux"
+            BlueprintName = "TDRedux-iOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -85,7 +85,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7511D61B1D964A1D008016CF"
             BuildableName = "TDRedux.framework"
-            BlueprintName = "TDRedux"
+            BlueprintName = "TDRedux-iOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
