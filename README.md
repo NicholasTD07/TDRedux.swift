@@ -82,6 +82,14 @@ let arranOfReducers: [(State?, Any)] = [ /* ... */ ]
 let combinedReducers: (State?, Any) = combineReducers(arranOfReducers)
 ```
 
+## What's Experimental?
+
+### Everything in `Store` is `final`
+
+`Store` and every property and methods in `Store` are defined as `final`.
+
+Let me know if you think the `Store` need to be subclassed and overridden.
+
 ## Read More
 
 - [How I built TDRedux Part 1](https://github.com/NicholasTD07/blog-posts/blob/drafts/swift/redux-pt-1/drafts/swift/redux-in-swift-pt-1.md)
