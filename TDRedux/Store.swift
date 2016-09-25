@@ -6,7 +6,7 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-public class Store<State> {
+public final class Store<State> {
     public final var state: State
     public final let reducer: Reducer
     public final var subscribers = [Subscriber]()
