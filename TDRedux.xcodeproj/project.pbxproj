@@ -118,9 +118,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7511D61B1D964A1D008016CF /* TDRedux */ = {
+		7511D61B1D964A1D008016CF /* TDRedux-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux" */;
+			buildConfigurationList = 7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux-iOS" */;
 			buildPhases = (
 				7511D6171D964A1D008016CF /* Sources */,
 				7511D6181D964A1D008016CF /* Frameworks */,
@@ -131,7 +131,7 @@
 			);
 			dependencies = (
 			);
-			name = TDRedux;
+			name = "TDRedux-iOS";
 			productName = TDRedux.swift;
 			productReference = 7511D61C1D964A1D008016CF /* TDRedux.framework */;
 			productType = "com.apple.product-type.framework";
@@ -187,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7511D61B1D964A1D008016CF /* TDRedux */,
+				7511D61B1D964A1D008016CF /* TDRedux-iOS */,
 				7511D6241D964A1D008016CF /* TDReduxTests */,
 			);
 		};
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		7511D6281D964A1D008016CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7511D61B1D964A1D008016CF /* TDRedux */;
+			target = 7511D61B1D964A1D008016CF /* TDRedux-iOS */;
 			targetProxy = 7511D6271D964A1D008016CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,13 +416,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux" */ = {
+		7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511D6311D964A1D008016CF /* Debug */,
 				7511D6321D964A1D008016CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				7511D6351D964A1D008016CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
