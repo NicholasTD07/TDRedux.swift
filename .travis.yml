@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode8
+xcode_project: TDRedux.xcodeproj
+xcode_scheme: TDRedux
+
+script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+
+  - xcodebuild -project TDRedux.xcodeproj -scheme TDRedux -destination "OS=10.0,name=iPhone 6s Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES test | xcpretty -c
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
