@@ -227,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7511D61B1D964A1D008016CF /* TDRedux */,
+				7511D61B1D964A1D008016CF /* TDRedux-iOS */,
 				7511D64E1D97CDCC008016CF /* TDRedux-watchOS */,
 				7511D6241D964A1D008016CF /* TDReduxTests */,
 			);
