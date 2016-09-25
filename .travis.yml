@@ -7,8 +7,8 @@ env:
   - PROJECT=TDRedux.xcodeproj
   - IOS_FRAMEWORK_SCHEME="TDRedux-iOS"
   - WATCHOS_FRAMEWORK_SCHEME="TDRedux-watchOS"
-  # - TVOS_FRAMEWORK_SCHEME="Alamofire tvOS"
-  # - MACOS_FRAMEWORK_SCHEME="Alamofire macOS"
+  - TVOS_FRAMEWORK_SCHEME="TDRedux-tvOS"
+  - MACOS_FRAMEWORK_SCHEME="TDRedux-macOS"
   - IOS_SDK=iphonesimulator10.0
   - WATCHOS_SDK=watchsimulator3.0
   - TVOS_SDK=appletvsimulator10.0
