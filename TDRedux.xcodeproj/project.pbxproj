@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7511D6261D964A1D008016CF /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D61C1D964A1D008016CF /* TDRedux.framework */; };
 		7511D62B1D964A1D008016CF /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
 		7511D62D1D964A1D008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7511D6371D964A3C008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
@@ -24,6 +23,7 @@
 		7511D6951D97E84D008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
 		7511D6961D97E84D008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
 		7511D6971D97E84D008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
+		7511D6981D97E9C0008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7511D61B1D964A1D008016CF;
 			remoteInfo = TDRedux.swift;
+		};
+		7511D6991D97EC6B008016CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7511D6861D97E04E008016CF;
+			remoteInfo = "TDRedux-macOS";
+		};
+		7511D69B1D97EC6B008016CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7511D6781D97DCF1008016CF;
+			remoteInfo = "TDRedux-tvOS";
+		};
+		7511D69D1D97EC6B008016CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7511D64E1D97CDCC008016CF;
+			remoteInfo = "TDRedux-watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7511D6261D964A1D008016CF /* TDRedux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +193,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7511D6981D97E9C0008016CF /* TDRedux.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +229,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				7511D69A1D97EC6B008016CF /* PBXTargetDependency */,
+				7511D69C1D97EC6B008016CF /* PBXTargetDependency */,
+				7511D69E1D97EC6B008016CF /* PBXTargetDependency */,
 				7511D6281D964A1D008016CF /* PBXTargetDependency */,
 			);
 			name = TDReduxTests;
@@ -417,6 +441,21 @@
 			isa = PBXTargetDependency;
 			target = 7511D61B1D964A1D008016CF /* TDRedux-iOS */;
 			targetProxy = 7511D6271D964A1D008016CF /* PBXContainerItemProxy */;
+		};
+		7511D69A1D97EC6B008016CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7511D6861D97E04E008016CF /* TDRedux-macOS */;
+			targetProxy = 7511D6991D97EC6B008016CF /* PBXContainerItemProxy */;
+		};
+		7511D69C1D97EC6B008016CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7511D6781D97DCF1008016CF /* TDRedux-tvOS */;
+			targetProxy = 7511D69B1D97EC6B008016CF /* PBXContainerItemProxy */;
+		};
+		7511D69E1D97EC6B008016CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7511D64E1D97CDCC008016CF /* TDRedux-watchOS */;
+			targetProxy = 7511D69D1D97EC6B008016CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
