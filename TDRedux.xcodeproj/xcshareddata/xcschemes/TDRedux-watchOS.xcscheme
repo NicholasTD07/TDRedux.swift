@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7511D64E1D97CDCC008016CF"
+            BuildableName = "TDRedux.framework"
+            BlueprintName = "TDRedux-watchOS"
+            ReferencedContainer = "container:TDRedux.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
