@@ -34,7 +34,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7511D6241D964A1D008016CF"
-               BuildableName = "TDReduxTests.xctest"
+               BuildableName = "TDReduxTests-iOS.xctest"
                BlueprintName = "TDReduxTests-iOS"
                ReferencedContainer = "container:TDRedux.xcodeproj">
             </BuildableReference>
