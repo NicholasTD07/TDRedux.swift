@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7511D61B1D964A1D008016CF"
+               BlueprintIdentifier = "7511D64E1D97CDCC008016CF"
                BuildableName = "TDRedux.framework"
-               BlueprintName = "TDRedux-iOS"
+               BlueprintName = "TDRedux-watchOS"
                ReferencedContainer = "container:TDRedux.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,26 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7511D6241D964A1D008016CF"
-               BuildableName = "TDReduxTests.xctest"
-               BlueprintName = "TDReduxTests"
-               ReferencedContainer = "container:TDRedux.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7511D61B1D964A1D008016CF"
+            BlueprintIdentifier = "7511D64E1D97CDCC008016CF"
             BuildableName = "TDRedux.framework"
-            BlueprintName = "TDRedux-iOS"
+            BlueprintName = "TDRedux-watchOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +54,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7511D61B1D964A1D008016CF"
+            BlueprintIdentifier = "7511D64E1D97CDCC008016CF"
             BuildableName = "TDRedux.framework"
-            BlueprintName = "TDRedux-iOS"
+            BlueprintName = "TDRedux-watchOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -83,9 +72,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7511D61B1D964A1D008016CF"
+            BlueprintIdentifier = "7511D64E1D97CDCC008016CF"
             BuildableName = "TDRedux.framework"
-            BlueprintName = "TDRedux-iOS"
+            BlueprintName = "TDRedux-watchOS"
             ReferencedContainer = "container:TDRedux.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
