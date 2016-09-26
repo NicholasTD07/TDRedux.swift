@@ -27,7 +27,7 @@ You can
 - dispatch *Actions* to change a *Store*'s *State*
 - subscribe to changes happens to the *State* of a *Store*
 
-[Read more: Redux in Swift Part 1 - Store and State](https://github.com/NicholasTD07/blog-posts/blob/drafts/swift/redux-pt-1/drafts/swift/redux-in-swift-pt-1.md#store-and-its-state)
+[Read more: Redux in Swift Part 1 - Store and State](https://github.com/NicholasTD07/blog-posts/blob/master/swift/redux-in-swift-pt-1.md#store-and-its-state)
 
 
 ### *Reducer* Type
@@ -40,7 +40,7 @@ class Store<State> {
 }
 ```
 
-[Read more: Redux in Swift Part 1 - Reducer and Action](https://github.com/NicholasTD07/blog-posts/blob/drafts/swift/redux-pt-1/drafts/swift/redux-in-swift-pt-1.md#reducer-and-action)
+[Read more: Redux in Swift Part 1 - Reducer and Action](https://github.com/NicholasTD07/blog-posts/blob/master/swift/redux-in-swift-pt-1.md#reducer-and-action)
 
 ### *Action*
 
@@ -52,7 +52,7 @@ An *Action* describes what happen**ed** while it may carry some data, e.g. `AddT
 typealias Action = Any
 ```
 
-[Read more: Redux in Swift Part 1 - Reducer and Action](https://github.com/NicholasTD07/blog-posts/blob/drafts/swift/redux-pt-1/drafts/swift/redux-in-swift-pt-1.md#reducer-and-action)
+[Read more: Redux in Swift Part 1 - Reducer and Action](https://github.com/NicholasTD07/blog-posts/blob/master/swift/redux-in-swift-pt-1.md#reducer-and-action)
 
 ### `Reducer` function
 
@@ -92,6 +92,6 @@ Let me know if you think the `Store` need to be subclassed and overridden.
 
 ## Read More
 
-- [How I built TDRedux Part 1](https://github.com/NicholasTD07/blog-posts/blob/drafts/swift/redux-pt-1/drafts/swift/redux-in-swift-pt-1.md)
+- [How I built TDRedux Part 1](https://github.com/NicholasTD07/blog-posts/blob/master/swift/redux-in-swift-pt-1.md)
 - [Introduction to Redux (JS)](http://redux.js.org)
 - [Getting Started with Redux (30 free videos, 2 minutes each)](https://egghead.io/series/getting-started-with-redux)
