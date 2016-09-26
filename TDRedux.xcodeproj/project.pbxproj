@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C1323681D99073700665F4E /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6791D97DCF1008016CF /* TDRedux.framework */; };
+		6C13236E1D99082600665F4E /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
 		6C3A50F11D98E49D00CFCCCE /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6871D97E04E008016CF /* TDRedux.framework */; };
 		6C3A50F71D98E50E00CFCCCE /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
 		7511D62B1D964A1D008016CF /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
@@ -29,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6C1323691D99073700665F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7511D6781D97DCF1008016CF;
+			remoteInfo = "TDRedux-tvOS";
+		};
 		6C3A50F21D98E49D00CFCCCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
@@ -46,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3A50EC1D98E49D00CFCCCE /* TDReduxTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D61C1D964A1D008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D61F1D964A1D008016CF /* TDRedux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.h; sourceTree = "<group>"; };
@@ -62,6 +72,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C1323601D99073700665F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C1323681D99073700665F4E /* TDRedux.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C3A50E91D98E49D00CFCCCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +144,7 @@
 				7511D6791D97DCF1008016CF /* TDRedux.framework */,
 				7511D6871D97E04E008016CF /* TDRedux.framework */,
 				6C3A50EC1D98E49D00CFCCCE /* TDReduxTests-macOS.xctest */,
+				6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +217,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6C1323621D99073700665F4E /* TDReduxTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C13236D1D99073700665F4E /* Build configuration list for PBXNativeTarget "TDReduxTests-tvOS" */;
+			buildPhases = (
+				6C13235F1D99073700665F4E /* Sources */,
+				6C1323601D99073700665F4E /* Frameworks */,
+				6C1323611D99073700665F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C13236A1D99073700665F4E /* PBXTargetDependency */,
+			);
+			name = "TDReduxTests-tvOS";
+			productName = "TDReduxTests-tvOS";
+			productReference = 6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6C3A50EB1D98E49D00CFCCCE /* TDReduxTests-macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C3A50F41D98E49D00CFCCCE /* Build configuration list for PBXNativeTarget "TDReduxTests-macOS" */;
@@ -316,6 +353,10 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = nicktd;
 				TargetAttributes = {
+					6C1323621D99073700665F4E = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					6C3A50EB1D98E49D00CFCCCE = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -361,11 +402,19 @@
 				7511D64E1D97CDCC008016CF /* TDRedux-watchOS */,
 				7511D6241D964A1D008016CF /* TDReduxTests-iOS */,
 				6C3A50EB1D98E49D00CFCCCE /* TDReduxTests-macOS */,
+				6C1323621D99073700665F4E /* TDReduxTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C1323611D99073700665F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C3A50EA1D98E49D00CFCCCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +460,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C13235F1D99073700665F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C13236E1D99082600665F4E /* TDReduxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C3A50E81D98E49D00CFCCCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,6 +527,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6C13236A1D99073700665F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7511D6781D97DCF1008016CF /* TDRedux-tvOS */;
+			targetProxy = 6C1323691D99073700665F4E /* PBXContainerItemProxy */;
+		};
 		6C3A50F31D98E49D00CFCCCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7511D6861D97E04E008016CF /* TDRedux-macOS */;
@@ -483,6 +545,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6C13236B1D99073700665F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TDReduxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
+				PRODUCT_NAME = "TDReduxTests-tvOS";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		6C13236C1D99073700665F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TDReduxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
+				PRODUCT_NAME = "TDReduxTests-tvOS";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		6C3A50F51D98E49D00CFCCCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -810,6 +898,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C13236D1D99073700665F4E /* Build configuration list for PBXNativeTarget "TDReduxTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C13236B1D99073700665F4E /* Debug */,
+				6C13236C1D99073700665F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6C3A50F41D98E49D00CFCCCE /* Build configuration list for PBXNativeTarget "TDReduxTests-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -817,6 +913,7 @@
 				6C3A50F61D98E49D00CFCCCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux" */ = {
 			isa = XCConfigurationList;
