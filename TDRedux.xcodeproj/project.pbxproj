@@ -34,34 +34,13 @@
 			remoteGlobalIDString = 7511D61B1D964A1D008016CF;
 			remoteInfo = TDRedux.swift;
 		};
-		7511D6991D97EC6B008016CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7511D6861D97E04E008016CF;
-			remoteInfo = "TDRedux-macOS";
-		};
-		7511D69B1D97EC6B008016CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7511D6781D97DCF1008016CF;
-			remoteInfo = "TDRedux-tvOS";
-		};
-		7511D69D1D97EC6B008016CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7511D6131D964A1D008016CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7511D64E1D97CDCC008016CF;
-			remoteInfo = "TDRedux-watchOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7511D61C1D964A1D008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D61F1D964A1D008016CF /* TDRedux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.h; sourceTree = "<group>"; };
 		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7511D6251D964A1D008016CF /* TDReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7511D6251D964A1D008016CF /* TDReduxTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D62A1D964A1D008016CF /* TDReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDReduxTests.swift; sourceTree = "<group>"; };
 		7511D62C1D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511D6361D964A3C008016CF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -124,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				7511D61C1D964A1D008016CF /* TDRedux.framework */,
-				7511D6251D964A1D008016CF /* TDReduxTests.xctest */,
+				7511D6251D964A1D008016CF /* TDReduxTests-iOS.xctest */,
 				7511D64F1D97CDCC008016CF /* TDRedux.framework */,
 				7511D6791D97DCF1008016CF /* TDRedux.framework */,
 				7511D6871D97E04E008016CF /* TDRedux.framework */,
@@ -218,9 +197,9 @@
 			productReference = 7511D61C1D964A1D008016CF /* TDRedux.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7511D6241D964A1D008016CF /* TDReduxTests */ = {
+		7511D6241D964A1D008016CF /* TDReduxTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests" */;
+			buildConfigurationList = 7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests-iOS" */;
 			buildPhases = (
 				7511D6211D964A1D008016CF /* Sources */,
 				7511D6221D964A1D008016CF /* Frameworks */,
@@ -229,14 +208,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				7511D69A1D97EC6B008016CF /* PBXTargetDependency */,
-				7511D69C1D97EC6B008016CF /* PBXTargetDependency */,
-				7511D69E1D97EC6B008016CF /* PBXTargetDependency */,
 				7511D6281D964A1D008016CF /* PBXTargetDependency */,
 			);
-			name = TDReduxTests;
+			name = "TDReduxTests-iOS";
 			productName = TDRedux.swiftTests;
-			productReference = 7511D6251D964A1D008016CF /* TDReduxTests.xctest */;
+			productReference = 7511D6251D964A1D008016CF /* TDReduxTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		7511D64E1D97CDCC008016CF /* TDRedux-watchOS */ = {
@@ -342,7 +318,7 @@
 				7511D6861D97E04E008016CF /* TDRedux-macOS */,
 				7511D6781D97DCF1008016CF /* TDRedux-tvOS */,
 				7511D64E1D97CDCC008016CF /* TDRedux-watchOS */,
-				7511D6241D964A1D008016CF /* TDReduxTests */,
+				7511D6241D964A1D008016CF /* TDReduxTests-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -441,21 +417,6 @@
 			isa = PBXTargetDependency;
 			target = 7511D61B1D964A1D008016CF /* TDRedux-iOS */;
 			targetProxy = 7511D6271D964A1D008016CF /* PBXContainerItemProxy */;
-		};
-		7511D69A1D97EC6B008016CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7511D6861D97E04E008016CF /* TDRedux-macOS */;
-			targetProxy = 7511D6991D97EC6B008016CF /* PBXContainerItemProxy */;
-		};
-		7511D69C1D97EC6B008016CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7511D6781D97DCF1008016CF /* TDRedux-tvOS */;
-			targetProxy = 7511D69B1D97EC6B008016CF /* PBXContainerItemProxy */;
-		};
-		7511D69E1D97EC6B008016CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7511D64E1D97CDCC008016CF /* TDRedux-watchOS */;
-			targetProxy = 7511D69D1D97EC6B008016CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -605,7 +566,7 @@
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDReduxTests;
-				PRODUCT_NAME = TDReduxTests;
+				PRODUCT_NAME = "TDReduxTests-iOS";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -617,7 +578,7 @@
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicktd.TDReduxTests;
-				PRODUCT_NAME = TDReduxTests;
+				PRODUCT_NAME = "TDReduxTests-iOS";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -775,7 +736,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests" */ = {
+		7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7511D6341D964A1D008016CF /* Debug */,
