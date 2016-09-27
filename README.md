@@ -90,6 +90,10 @@ let combinedReducers: (State?, Any) = combineReducers(arranOfReducers)
 
 Let me know if you think the `Store` need to be subclassed and overridden.
 
+## License
+
+TDRedux is released under the MIT license. See LICENSE for details.
+
 ## Read More
 
 - [How I built TDRedux Part 1](https://github.com/NicholasTD07/blog-posts/blob/master/swift/redux-in-swift-pt-1.md)
