@@ -1,0 +1,9 @@
+disabled_rules:
+
+opt_in_rules:
+  - empty_count
+  - missing_docs
+  - force_unwrapping
+included:
+  - TDRedux
+  - TDReduxTests
