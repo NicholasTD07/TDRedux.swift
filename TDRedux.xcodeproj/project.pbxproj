@@ -242,6 +242,7 @@
 				6C3A50E81D98E49D00CFCCCE /* Sources */,
 				6C3A50E91D98E49D00CFCCCE /* Frameworks */,
 				6C3A50EA1D98E49D00CFCCCE /* Resources */,
+				6C4A8C121D9CED400037265A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -261,6 +262,7 @@
 				7511D6181D964A1D008016CF /* Frameworks */,
 				7511D6191D964A1D008016CF /* Headers */,
 				7511D61A1D964A1D008016CF /* Resources */,
+				6C4A8C131D9CED6D0037265A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -297,6 +299,7 @@
 				7511D64B1D97CDCC008016CF /* Frameworks */,
 				7511D64C1D97CDCC008016CF /* Headers */,
 				7511D64D1D97CDCC008016CF /* Resources */,
+				6C4A8C161D9CED8A0037265A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -315,6 +318,7 @@
 				7511D6751D97DCF1008016CF /* Frameworks */,
 				7511D6761D97DCF1008016CF /* Headers */,
 				7511D6771D97DCF1008016CF /* Resources */,
+				6C4A8C151D9CED820037265A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -333,6 +337,7 @@
 				7511D6831D97E04E008016CF /* Frameworks */,
 				7511D6841D97E04E008016CF /* Headers */,
 				7511D6851D97E04E008016CF /* Resources */,
+				6C4A8C141D9CED7B0037265A /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -458,6 +463,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C4A8C121D9CED400037265A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		6C4A8C131D9CED6D0037265A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6C4A8C141D9CED7B0037265A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6C4A8C151D9CED820037265A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6C4A8C161D9CED8A0037265A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C13235F1D99073700665F4E /* Sources */ = {
