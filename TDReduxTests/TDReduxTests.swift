@@ -39,7 +39,9 @@ class TDReduxTests: XCTestCase {
     }
 
     func testNoopCombineReducers() {
+        // swiftlint:disable nesting
         struct SomeAction: TDRedux.Action { }
+        // swiftlint:enable nesting
 
         // This will never be executed because of its SomeAction type.
         let someReducer = Reducer(initialState: 0) { (state: Int, action: SomeAction) -> Int in
