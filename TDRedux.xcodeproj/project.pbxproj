@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C1323681D99073700665F4E /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6791D97DCF1008016CF /* TDRedux.framework */; };
 		6C13236E1D99082600665F4E /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
-		6C3A50F11D98E49D00CFCCCE /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6871D97E04E008016CF /* TDRedux.framework */; };
 		6C3A50F71D98E50E00CFCCCE /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
+		6C74E5861D9DF78000F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5841D9DF78000F9742C /* Nimble.framework */; };
+		6C74E5871D9DF78000F9742C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5851D9DF78000F9742C /* Quick.framework */; };
+		6C74E58A1D9DF79300F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5881D9DF79300F9742C /* Nimble.framework */; };
+		6C74E58B1D9DF79300F9742C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5891D9DF79300F9742C /* Quick.framework */; };
+		6C74E58E1D9DF79A00F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E58C1D9DF79A00F9742C /* Nimble.framework */; };
+		6C74E58F1D9DF79A00F9742C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E58D1D9DF79A00F9742C /* Quick.framework */; };
 		7511D62B1D964A1D008016CF /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
 		7511D62D1D964A1D008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7511D6371D964A3C008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
@@ -57,6 +61,12 @@
 /* Begin PBXFileReference section */
 		6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3A50EC1D98E49D00CFCCCE /* TDReduxTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C74E5841D9DF78000F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		6C74E5851D9DF78000F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		6C74E5881D9DF79300F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Checkouts/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
+		6C74E5891D9DF79300F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Checkouts/Quick/build/Debug/Quick.framework; sourceTree = "<group>"; };
+		6C74E58C1D9DF79A00F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-appletvos/Nimble.framework"; sourceTree = "<group>"; };
+		6C74E58D1D9DF79A00F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-appletvos/Quick.framework"; sourceTree = "<group>"; };
 		7511D61C1D964A1D008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D61F1D964A1D008016CF /* TDRedux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.h; sourceTree = "<group>"; };
 		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C1323681D99073700665F4E /* TDRedux.framework in Frameworks */,
+				6C74E58E1D9DF79A00F9742C /* Nimble.framework in Frameworks */,
+				6C74E58F1D9DF79A00F9742C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C3A50F11D98E49D00CFCCCE /* TDRedux.framework in Frameworks */,
+				6C74E58A1D9DF79300F9742C /* Nimble.framework in Frameworks */,
+				6C74E58B1D9DF79300F9742C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C74E5861D9DF78000F9742C /* Nimble.framework in Frameworks */,
+				6C74E5871D9DF78000F9742C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,12 +140,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C74E5831D9DF78000F9742C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C74E58C1D9DF79A00F9742C /* Nimble.framework */,
+				6C74E58D1D9DF79A00F9742C /* Quick.framework */,
+				6C74E5881D9DF79300F9742C /* Nimble.framework */,
+				6C74E5891D9DF79300F9742C /* Quick.framework */,
+				6C74E5841D9DF78000F9742C /* Nimble.framework */,
+				6C74E5851D9DF78000F9742C /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7511D6121D964A1D008016CF = {
 			isa = PBXGroup;
 			children = (
 				7511D61E1D964A1D008016CF /* TDRedux */,
 				7511D6291D964A1D008016CF /* Tests */,
 				7511D61D1D964A1D008016CF /* Products */,
+				6C74E5831D9DF78000F9742C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -627,6 +655,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-appletvos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-appletvos",
+				);
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
@@ -641,6 +674,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-appletvos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-appletvos",
+				);
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
@@ -656,6 +694,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug",
+				);
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -671,6 +714,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug",
+				);
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -823,6 +871,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
@@ -835,6 +888,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
