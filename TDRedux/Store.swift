@@ -7,8 +7,7 @@
 //
 
 public final class Store<State> {
-    public final var state: State
-    public final let reducer: Reducer
+    public private(set) final var state: State
     public final var subscribers = [Subscriber]()
 
     public init(with reducer: @escaping Reducer) {
