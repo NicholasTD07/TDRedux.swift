@@ -36,6 +36,8 @@ env:
 
   # - xcodebuild -project TDRedux.xcodeproj -scheme TDRedux -destination "OS=10.0,name=iPhone 6s Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES test | xcpretty -c
 
+before_install:
+  - carthage checkout
 script:
   - set -o pipefail
   - xcodebuild -version
