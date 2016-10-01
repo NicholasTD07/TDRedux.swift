@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C13236E1D99082600665F4E /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
-		6C3A50F71D98E50E00CFCCCE /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
 		6C74E5861D9DF78000F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5841D9DF78000F9742C /* Nimble.framework */; };
 		6C74E5871D9DF78000F9742C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5851D9DF78000F9742C /* Quick.framework */; };
 		6C74E58A1D9DF79300F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5881D9DF79300F9742C /* Nimble.framework */; };
@@ -18,7 +16,6 @@
 		6C74E5911D9E1E5100F9742C /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D61C1D964A1D008016CF /* TDRedux.framework */; };
 		6C74E5921D9E1E5900F9742C /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6871D97E04E008016CF /* TDRedux.framework */; };
 		6C74E5931D9E1E6100F9742C /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6791D97DCF1008016CF /* TDRedux.framework */; };
-		7511D62B1D964A1D008016CF /* TDReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D62A1D964A1D008016CF /* TDReduxTests.swift */; };
 		7511D62D1D964A1D008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7511D6371D964A3C008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
 		7511D63A1D964B03008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
@@ -35,6 +32,15 @@
 		7511D6961D97E84D008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
 		7511D6971D97E84D008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
 		7511D6981D97E9C0008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		753785D31D9F26AE004703E0 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785CE1D9F2677004703E0 /* StoreSpec.swift */; };
+		753785D41D9F26AE004703E0 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785CE1D9F2677004703E0 /* StoreSpec.swift */; };
+		753785D51D9F26AF004703E0 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785CE1D9F2677004703E0 /* StoreSpec.swift */; };
+		753785D71D9F2B39004703E0 /* ReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785D61D9F2B39004703E0 /* ReducerSpec.swift */; };
+		753785D81D9F2B39004703E0 /* ReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785D61D9F2B39004703E0 /* ReducerSpec.swift */; };
+		753785D91D9F2B39004703E0 /* ReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785D61D9F2B39004703E0 /* ReducerSpec.swift */; };
+		753785DD1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
+		753785DE1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
+		753785DF1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +56,6 @@
 		7511D61F1D964A1D008016CF /* TDRedux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.h; sourceTree = "<group>"; };
 		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511D6251D964A1D008016CF /* TDReduxTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7511D62A1D964A1D008016CF /* TDReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDReduxTests.swift; sourceTree = "<group>"; };
 		7511D62C1D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7511D6361D964A3C008016CF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		7511D6391D964B03008016CF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -58,6 +63,9 @@
 		7511D64F1D97CDCC008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D6791D97DCF1008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D6871D97E04E008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		753785CE1D9F2677004703E0 /* StoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
+		753785D61D9F2B39004703E0 /* ReducerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReducerSpec.swift; sourceTree = "<group>"; };
+		753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineReducersSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +181,10 @@
 		7511D6291D964A1D008016CF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				7511D62A1D964A1D008016CF /* TDReduxTests.swift */,
 				7511D62C1D964A1D008016CF /* Info.plist */,
+				753785CE1D9F2677004703E0 /* StoreSpec.swift */,
+				753785D61D9F2B39004703E0 /* ReducerSpec.swift */,
+				753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */,
 			);
 			name = Tests;
 			path = TDReduxTests;
@@ -234,6 +244,7 @@
 				6C13235F1D99073700665F4E /* Sources */,
 				6C1323601D99073700665F4E /* Frameworks */,
 				6C1323611D99073700665F4E /* Resources */,
+				753785DB1D9F2CDB004703E0 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -288,6 +299,7 @@
 				7511D6211D964A1D008016CF /* Sources */,
 				7511D6221D964A1D008016CF /* Frameworks */,
 				7511D6231D964A1D008016CF /* Resources */,
+				753785DA1D9F2CC8004703E0 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -542,6 +554,34 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		753785DA1D9F2CC8004703E0 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		753785DB1D9F2CDB004703E0 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -549,7 +589,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C13236E1D99082600665F4E /* TDReduxTests.swift in Sources */,
+				753785DF1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
+				753785D91D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
+				753785D51D9F26AF004703E0 /* StoreSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,7 +599,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C3A50F71D98E50E00CFCCCE /* TDReduxTests.swift in Sources */,
+				753785DE1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
+				753785D81D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
+				753785D41D9F26AE004703E0 /* StoreSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +619,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7511D62B1D964A1D008016CF /* TDReduxTests.swift in Sources */,
+				753785DD1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
+				753785D71D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
+				753785D31D9F26AE004703E0 /* StoreSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,11 +662,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-appletvos",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-appletvos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
@@ -635,11 +677,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-appletvos",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-appletvos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
@@ -655,11 +693,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -675,11 +709,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -832,11 +862,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
@@ -849,11 +875,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = TDReduxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
