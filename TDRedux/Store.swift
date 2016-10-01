@@ -40,7 +40,7 @@ public final class Store<State> {
     }
 
     public typealias Dispatcher = (Store, Action) -> Void
-    public typealias Middleware = (Dispatcher) -> Dispatcher
+    public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
     public typealias Subscriber = (Store) -> ()
     public typealias Reducer = (State?, Action) -> State
 }
