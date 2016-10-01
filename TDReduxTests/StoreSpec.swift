@@ -24,7 +24,7 @@ class StoreSpec: QuickSpec {
             }
 
             context("when first created") {
-                it("has a initial state") {
+                it("has zero as its initial state") {
                     expect(store.state) == 0
                 }
             }
@@ -62,7 +62,7 @@ class StoreSpec: QuickSpec {
                 }
             }
 
-            context("when subscribed to a store") {
+            context("when subscribs to a store") {
                 it("gets the state in the store") {
                     expect(state) == store.state
                 }

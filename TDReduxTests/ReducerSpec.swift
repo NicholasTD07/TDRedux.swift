@@ -37,7 +37,7 @@ class ReducerSpec: QuickSpec {
                     store.dispatch(SpecificAction())
                 }
 
-                it("does not get called") {
+                it("does get called") {
                     expect(called) == true
                 }
             }
