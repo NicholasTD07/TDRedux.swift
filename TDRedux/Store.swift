@@ -27,6 +27,8 @@ public final class Store<State> {
             .reduce(dispatcher) { dispatcher, middleware in
                 middleware(dispatcher)
             }
+
+        self.dispatch(InitialAction())
     }
 
 

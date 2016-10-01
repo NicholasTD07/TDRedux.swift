@@ -38,16 +38,19 @@ class MiddlewareSpec: QuickSpec {
                         },
                         middlewares: [recoder]
                     )
-                    store.dispatch(SomeAction())
                 }
 
-//                it("gets the initial action") {
-//                    // swiftlint:disable force_cast
-//                    expect(dispatchedAction as! InitialAction).toNot(beNil())
-//                    // swiftlint:enable force_cast
-//                }
+                it("gets the initial action") {
+                    // swiftlint:disable force_cast
+                    expect(dispatchedAction as! InitialAction).toNot(beNil())
+                    // swiftlint:enable force_cast
+                }
 
                 context("when dispatched an action") {
+                    beforeEach {
+                        store.dispatch(SomeAction())
+                    }
+
                     it("gets the action") {
                         // swiftlint:disable force_cast
                         expect(dispatchedAction as! SomeAction).toNot(beNil())
@@ -73,17 +76,17 @@ class MiddlewareSpec: QuickSpec {
                     }
                 }
 
-                beforeEach {
-                    store = Store.init(
-                        with: Reducer(initialState: 0) { (state, action: Action) in return state },
-                        middlewares: [
-                            record(with: "a"),
-                            record(with: "b"),
-                            record(with: "c"),
-                            ]
-                    )
-                    store.dispatch(SomeAction())
-                }
+                store = Store.init(
+                    with: Reducer(initialState: 0) { (state, action: Action) in return state },
+                    middlewares: [
+                        record(with: "a"),
+                        record(with: "b"),
+                        record(with: "c"),
+                    ]
+                )
+
+                // Why no setup code / beforeEach?
+                // Because the store will dispatch the InitialAction when created.
 
                 it("middlewares are called in order") {
                     expect(middlewares).to(equal(["a", "b", "c"]))
