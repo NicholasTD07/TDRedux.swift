@@ -14,34 +14,8 @@ import TDRedux
 class StoreSpec: QuickSpec {
     // swiftlint:disable function_body_length
     override func spec() {
-        // swiftlint:disable nesting
-        // FIXME/DISCUSSION: Should I move these nested definitions elsewhere?
-        //  Possible places:
-        //      - Before StoreSpec
-        //          - still takes a lot space before the actual tests
-        //      - After StoreSpec:
-        //          - clean but have to cmd-click to find out where they are
-        //      - Another file
-        //          - even harder to find/switch back and forth
-        enum CounterActions: TDRedux.Action {
-            case increase
-            case decrease
-        }
-
-        typealias State = Int
-        typealias IntStore = TDRedux.Store<State>
-
-        let counterReducer = Reducer(initialState: 0) {
-            (state: State, action: CounterActions) -> Int in
-            switch action {
-            case .increase:
-                return state + 1
-            case .decrease:
-                return state - 1
-            }
-        }
-        // swiftlint:enable nesting
-
+        // NOTE: IntStore, counterReducer and CounterActions
+        //       are defined in the bottom of this file
         describe("Store") {
             var store: IntStore!
 
@@ -106,4 +80,22 @@ class StoreSpec: QuickSpec {
         }
     }
     // swiftlint:enable function_body_length
+}
+
+private enum CounterActions: TDRedux.Action {
+    case increase
+    case decrease
+}
+
+private typealias State = Int
+private typealias IntStore = TDRedux.Store<State>
+
+private let counterReducer = Reducer(initialState: 0) {
+    (state: State, action: CounterActions) -> Int in
+    switch action {
+    case .increase:
+        return state + 1
+    case .decrease:
+        return state - 1
+    }
 }
