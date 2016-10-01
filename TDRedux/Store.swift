@@ -10,17 +10,28 @@ public final class Store<State> {
     public private(set) final var state: State
     public final var subscribers = [Subscriber]()
 
-    public init(with reducer: @escaping Reducer) {
+    private var dispatcher: Dispatcher
+
+    public init(with reducer: @escaping Reducer, middlewares: [Middleware] = []) {
         self.state = reducer(nil, InitialAction())
-        self.reducer = reducer
+
+        let dispatcher = { (store: Store, action: Action) in
+            store.state = reducer(store.state, action)
+            store.subscribers.forEach {
+                $0(store)
+            }
+        }
+
+        self.dispatcher = middlewares
+            .reversed()
+            .reduce(dispatcher) { dispatcher, middleware in
+                middleware(dispatcher)
+            }
     }
 
 
-    public final func dispatch(_ action: Action) {
-        self.state = reducer(state, action)
-        subscribers.forEach {
-            $0(self)
-        }
+    public func dispatch(_ action: Action) {
+        dispatcher(self, action)
     }
 
     public final func subscribe(with subscriber: @escaping Subscriber) {
