@@ -45,11 +45,11 @@ script:
   - open -b com.apple.iphonesimulator
 
   # Build Framework in Debug and Run Tests if specified
-  - if [ $RUN_TESTS == "YES" ]; then
-      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" test | xcpretty;
-    else
-      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build | xcpretty;
-    fi
+  # - if [ $RUN_TESTS == "YES" ]; then
+  #     xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" test | xcpretty;
+  #   else
+  #     xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build | xcpretty;
+  #   fi
 
   # Build Framework in Release and Run Tests if specified
   - if [ $RUN_TESTS == "YES" ]; then
