@@ -28,6 +28,10 @@ public final class Store<State> {
                 middleware(dispatcher)
             }
 
+        // NOTE: Dispatching `InitialAction` the second time
+        //          to update middlewares with this action and initial state.
+        //          Because no reducers **should** handle `InitialAction`,
+        //          This should have no effect on the state and store.
         self.dispatch(InitialAction())
     }
 
