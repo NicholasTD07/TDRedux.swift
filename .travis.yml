@@ -42,6 +42,7 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
+  - open -b com.apple.iphonesimulator
 
   # Build Framework in Debug and Run Tests if specified
   - if [ $RUN_TESTS == "YES" ]; then
