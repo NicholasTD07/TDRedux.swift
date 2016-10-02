@@ -41,6 +41,9 @@
 		753785DD1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
 		753785DE1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
 		753785DF1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
+		753785E11D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */; };
+		753785E21D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */; };
+		753785E31D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,7 @@
 		753785CE1D9F2677004703E0 /* StoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
 		753785D61D9F2B39004703E0 /* ReducerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReducerSpec.swift; sourceTree = "<group>"; };
 		753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineReducersSpec.swift; sourceTree = "<group>"; };
+		753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 				753785CE1D9F2677004703E0 /* StoreSpec.swift */,
 				753785D61D9F2B39004703E0 /* ReducerSpec.swift */,
 				753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */,
+				753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */,
 			);
 			name = Tests;
 			path = TDReduxTests;
@@ -589,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753785E31D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
 				753785DF1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
 				753785D91D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
 				753785D51D9F26AF004703E0 /* StoreSpec.swift in Sources */,
@@ -599,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753785E21D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
 				753785DE1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
 				753785D81D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
 				753785D41D9F26AE004703E0 /* StoreSpec.swift in Sources */,
@@ -619,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753785E11D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
 				753785DD1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
 				753785D71D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
 				753785D31D9F26AE004703E0 /* StoreSpec.swift in Sources */,
