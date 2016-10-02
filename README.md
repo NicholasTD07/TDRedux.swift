@@ -82,6 +82,13 @@ let arranOfReducers: [(State?, Any)] = [ /* ... */ ]
 let combinedReducers: (State?, Any) = combineReducers(arranOfReducers)
 ```
 
+### *Middleware*
+
+> It provides a third-party extension point between dispatching an action, and the moment it reaches the reducer.
+
+[Redux doc: Middleware](http://redux.js.org/docs/advanced/Middleware.html)
+
+
 ## What's Experimental?
 
 ### Everything in `Store` is `final`
@@ -89,6 +96,10 @@ let combinedReducers: (State?, Any) = combineReducers(arranOfReducers)
 `Store` and every property and methods in `Store` are defined as `final`.
 
 Let me know if you think the `Store` need to be subclassed and overridden.
+
+### Middleware
+
+I am not too familiar with this concept in Redux and also I am not sure whether there are potential issues in my implementation or not.
 
 ## License
 
