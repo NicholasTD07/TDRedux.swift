@@ -7,7 +7,7 @@
 //
 
 public final class Store<State> {
-    public private(set) final var state: State
+    public fileprivate(set) final var state: State
     public final var subscribers = [Subscriber]()
 
     private var dispatcher: Dispatcher
@@ -15,18 +15,7 @@ public final class Store<State> {
     public init(with reducer: @escaping Reducer, middlewares: [Middleware] = []) {
         self.state = reducer(nil, InitialAction())
 
-        let dispatcher = { (store: Store, action: Action) in
-            store.state = reducer(store.state, action)
-            store.subscribers.forEach {
-                $0(store)
-            }
-        }
-
-        self.dispatcher = middlewares
-            .reversed()
-            .reduce(dispatcher) { dispatcher, middleware in
-                middleware(dispatcher)
-            }
+        self.dispatcher = Store.combine(middlewares: middlewares, with: reducer)
 
         // NOTE: Dispatching `InitialAction` the second time
         //          to update middlewares with this action and initial state.
@@ -34,7 +23,6 @@ public final class Store<State> {
         //          This should have no effect on the state and store.
         self.dispatch(InitialAction())
     }
-
 
     public func dispatch(_ action: Action) {
         dispatcher(self, action)
@@ -49,4 +37,24 @@ public final class Store<State> {
     public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
     public typealias Subscriber = (Store) -> ()
     public typealias Reducer = (State?, Action) -> State
+}
+
+extension Store {
+    public static func combine(middlewares: [Middleware], with reducer: @escaping Reducer) -> Dispatcher {
+        let dispatcher = { (store: Store, action: Action) in
+            store.state = reducer(store.state, action)
+            store.subscribers.forEach {
+                $0(store)
+            }
+        }
+        return Store.combine(middlewares: middlewares, with: dispatcher)
+    }
+
+    public static func combine(middlewares: [Middleware], with dispatcher: @escaping Dispatcher) -> Dispatcher {
+        return middlewares
+            .reversed()
+            .reduce(dispatcher) { dispatcher, middleware in
+                middleware(dispatcher)
+        }
+    }
 }
