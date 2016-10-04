@@ -6,6 +6,15 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
+// MARK: - Types
+extension Store {
+    public typealias Dispatcher = (Store, Action) -> Void
+    public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
+    public typealias Subscriber = (Store) -> ()
+    public typealias Reducer = (State?, Action) -> State
+}
+
+// MARK: - Store
 public final class Store<State> {
     public fileprivate(set) final var state: State
     public final var subscribers = [Subscriber]()
@@ -32,11 +41,6 @@ public final class Store<State> {
         subscribers.append(subscriber)
         subscriber(self)
     }
-
-    public typealias Dispatcher = (Store, Action) -> Void
-    public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
-    public typealias Subscriber = (Store) -> ()
-    public typealias Reducer = (State?, Action) -> State
 }
 
 // MARK: - Combining Middlewares
