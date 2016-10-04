@@ -72,7 +72,7 @@ let wrappedReducer: (CounterState?, Any) = Reducer(initialState: 0, reducer: cou
 let counterStore = Store<CounterState>.init(with: wrappedReducer)
 ```
 
-### `combineReducer`
+### `combineReducers`
 
 A helper function which combines an array of *Reducers* into one. For example:
 
