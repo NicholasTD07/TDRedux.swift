@@ -39,15 +39,13 @@ public final class Store<State> {
     public typealias Reducer = (State?, Action) -> State
 }
 
+// MARK: - Combining Middlewares
 extension Store {
     public static func combine(middlewares: [Middleware], with reducer: @escaping Reducer) -> Dispatcher {
-        let dispatcher = { (store: Store, action: Action) in
-            store.state = reducer(store.state, action)
-            store.subscribers.forEach {
-                $0(store)
-            }
-        }
-        return Store.combine(middlewares: middlewares, with: dispatcher)
+        return self.combine(
+            middlewares: middlewares,
+            with: self.defaultDispatcher(with: reducer)
+        )
     }
 
     public static func combine(middlewares: [Middleware], with dispatcher: @escaping Dispatcher) -> Dispatcher {
@@ -55,6 +53,18 @@ extension Store {
             .reversed()
             .reduce(dispatcher) { dispatcher, middleware in
                 middleware(dispatcher)
+        }
+    }
+}
+
+// MARK: - Default Dispatcher
+extension Store {
+    public static func defaultDispatcher(with reducer: @escaping Reducer) -> Dispatcher {
+        return { (store: Store, action: Action) in
+            store.state = reducer(store.state, action)
+            store.subscribers.forEach {
+                $0(store)
+            }
         }
     }
 }
