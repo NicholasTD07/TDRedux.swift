@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TDRedux.swift"
-  s.version      = "1.4.0"
+  s.version      = "1.4.1"
   s.summary      = "Yet another Redux written in Swift"
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author             = { "NicholasTD07" => "Nicholas.TD07@gmail.com" }
   s.social_media_url   = "https://twitter.com/NicholasTD07"
 
-
+  s.module_name = "TDRedux"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
   s.watchos.deployment_target = "2.0"
