@@ -8,6 +8,8 @@
 [![Codecov](https://img.shields.io/codecov/c/github/NicholasTD07/TDRedux.swift.svg?maxAge=2592000)](https://codecov.io/gh/NicholasTD07/TDRedux.swift)
 [![CocoaPods](https://img.shields.io/cocoapods/p/TDRedux.swift.svg?maxAge=2592000)](http://cocoadocs.org/docsets/TDRedux.swift/)
 [![CocoaPods](https://img.shields.io/cocoapods/l/TDRedux.swift.svg?maxAge=2592000)](./LICENSE)
+
+
 Yet another Redux written in Swift
 
 ## Installation
