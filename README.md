@@ -1,14 +1,13 @@
 # TDRedux
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/TDRedux.swift.svg?maxAge=2592000)](http://cocoadocs.org/docsets/TDRedux.swift/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+
 [![Travis](https://img.shields.io/travis/NicholasTD07/TDRedux.swift.svg?maxAge=2592000)](https://travis-ci.org/NicholasTD07/TDRedux.swift)
 [![Codecov](https://img.shields.io/codecov/c/github/NicholasTD07/TDRedux.swift.svg?maxAge=2592000)](https://codecov.io/gh/NicholasTD07/TDRedux.swift)
 [![CocoaPods](https://img.shields.io/cocoapods/p/TDRedux.swift.svg?maxAge=2592000)](http://cocoadocs.org/docsets/TDRedux.swift/)
 [![CocoaPods](https://img.shields.io/cocoapods/l/TDRedux.swift.svg?maxAge=2592000)](./LICENSE)
-
-[![CocoaPods](https://img.shields.io/cocoapods/v/TDRedux.swift.svg?maxAge=2592000)](http://cocoadocs.org/docsets/TDRedux.swift/)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
-[![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://swift.org/package-manager/#example-usage)
-
 Yet another Redux written in Swift
 
 ## Installation
