@@ -13,7 +13,8 @@
 /// The returned reducer function will return
 ///   - `initialState` when `state` is nil
 ///   - current `state` when `action` is not of type `SpecificActionType`
-///   - return value of the wrapped reducer function when both `state` is not nil AND `action` is of type `SpecificActionType`
+///   - return value of the wrapped reducer function when both `state` is not nil
+///     AND `action` is of type `SpecificActionType`
 ///
 /// - parameter initialState: the initial `state` for the Reducer passed in
 /// - parameter reducer:      the reducer being wrapped
