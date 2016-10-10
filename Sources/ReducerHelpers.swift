@@ -16,8 +16,8 @@
 ///   - return value of the wrapped reducer function when both `state` is not nil
 ///     AND `action` is of type `SpecificActionType`
 ///
-/// - parameter initialState: the initial `state` for the Reducer passed in
-/// - parameter reducer:      the reducer being wrapped
+/// - parameter initialState: the initial State for the Reducer passed in
+/// - parameter reducer:      the Reducer function being wrapped
 ///
 /// - returns: A reducer function
 public func Reducer<State, SpecificActionType>(
@@ -37,7 +37,7 @@ public func Reducer<State, SpecificActionType>(
 ///
 /// - parameter reducers: an array of `Reducer`s who takes and returns the same type of `State`
 ///
-/// - returns: A reducer function
+/// - returns: A Reducer function
 public func combineReducers<State>(
     _ reducers: [(State?, Any) -> State]) -> (State?, Any
     ) -> State {
