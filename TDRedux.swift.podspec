@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TDRedux.swift"
-  s.version      = "1.4.2"
+  s.version      = "1.4.3"
   s.summary      = "Yet another Redux written in Swift"
 
   s.description  = <<-DESC
