@@ -7,15 +7,15 @@
 //
 
 extension Store {
-    typealias StateSubscriber = (_ state: State) -> ()
+    public typealias StateSubscriber = (_ state: State) -> ()
 
-    func subscribe(with subscriber: @escaping StateSubscriber) {
+    public func subscribe(with subscriber: @escaping StateSubscriber) {
         self.subscribe { store in
             subscriber(store.state)
         }
     }
 
-    func subscribe<SpecificState>(
+    public func subscribe<SpecificState>(
         with convertor: @escaping (State) -> SpecificState,
         subscriber: @escaping (SpecificState) -> ()
     ) {
