@@ -12,7 +12,6 @@ import Nimble
 import TDRedux
 
 class StoreSpec: QuickSpec {
-    // swiftlint:disable function_body_length
     override func spec() {
         // NOTE: IntStore, counterReducer and CounterActions
         //       are defined in the bottom of this file
@@ -79,7 +78,6 @@ class StoreSpec: QuickSpec {
             }
         }
     }
-    // swiftlint:enable function_body_length
 }
 
 private enum CounterActions: TDRedux.Action {
