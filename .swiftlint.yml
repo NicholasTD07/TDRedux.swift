@@ -7,7 +7,3 @@ opt_in_rules:
 included:
   - Sources
   - Tests
-
-function_body_length:
-  excluded:
-    - spec

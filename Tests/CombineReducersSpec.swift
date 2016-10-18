@@ -12,6 +12,7 @@ import Nimble
 import TDRedux
 
 class CombineReducersSpec: QuickSpec {
+    // swiftlint:disable function_body_length
     override func spec() {
         // swiftlint:disable nesting
         enum Reducers: String {
@@ -93,4 +94,5 @@ class CombineReducersSpec: QuickSpec {
             }
         }
     }
+    // swiftlint:enable function_body_length
 }
