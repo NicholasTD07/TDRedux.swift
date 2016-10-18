@@ -20,6 +20,27 @@ class SubscribeExtensionSpecs: QuickSpec {
                 store = Store<ToDoState>.init(with: reducer)
             }
 
+            context("when subscribed with a convertor") {
+                var todos: [ToDoState.ToDo]!
+
+                beforeEach {
+                    store.subscribe(withConvertor: { $0.todos }) { storesToDos in
+                        todos = storesToDos
+                    }
+                }
+
+                context("when the store's state changed") {
+                    beforeEach {
+                        store.dispatch(ToDoActions.addToDo(title: "go buy me milk"))
+                    }
+
+                    it("gets the change") {
+                        expect(todos).to(contain("go buy me milk"))
+                    }
+                }
+
+            }
+
             context("when subscribed to a store's state") {
                 var state: ToDoState!
 
@@ -43,7 +64,7 @@ class SubscribeExtensionSpecs: QuickSpec {
     }
 }
 
-private let reducer = TDRedux.Reducer(initialState: ToDoState.initial) {
+private let reducer = Reducer(initialState: ToDoState.initial) {
     (state, action: ToDoActions) -> ToDoState in
     switch action {
     case .addToDo(let todo):
@@ -71,5 +92,6 @@ private struct ToDoState {
     let todos: [ToDo]
     let filter: Filter
 
-    static let initial = ToDoState(todos: [], filter: .all)
+    static let initialToDos = [ToDo]()
+    static let initial = ToDoState(todos: initialToDos, filter: .all)
 }

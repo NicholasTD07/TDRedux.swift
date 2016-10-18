@@ -16,7 +16,7 @@ extension Store {
     }
 
     public func subscribe<SpecificState>(
-        with convertor: @escaping (State) -> SpecificState,
+        withConvertor convertor: @escaping (State) -> SpecificState,
         subscriber: @escaping (SpecificState) -> ()
     ) {
         self.subscribe { state in
