@@ -20,11 +20,11 @@ class SubscribeExtensionSpecs: QuickSpec {
                 store = Store<ToDoState>.init(with: reducer)
             }
 
-            context("when subscribed with a convertor") {
+            context("when subscribed with a converter") {
                 var todos: [ToDoState.ToDo]!
 
                 beforeEach {
-                    store.subscribe(withConvertor: { $0.todos }) { storesToDos in
+                    store.subscribe(withConverter: { $0.todos }) { storesToDos in
                         todos = storesToDos
                     }
                 }

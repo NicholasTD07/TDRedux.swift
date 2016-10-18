@@ -16,11 +16,11 @@ extension Store {
     }
 
     public func subscribe<SpecificState>(
-        withConvertor convertor: @escaping (State) -> SpecificState,
+        withConverter converter: @escaping (State) -> SpecificState,
         subscriber: @escaping (SpecificState) -> ()
     ) {
         self.subscribe { state in
-            subscriber(convertor(state))
+            subscriber(converter(state))
         }
     }
 }
