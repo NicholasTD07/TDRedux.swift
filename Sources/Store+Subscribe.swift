@@ -19,7 +19,6 @@ extension Store {
         }
     }
 
-
     /// Subcribes a *SpecificStateSubscriber* (takes a *SpecificState*)
     /// to the changes of a *Store*'s *State*
     /// with the help of a `Converter`

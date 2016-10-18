@@ -63,7 +63,6 @@ class MiddlewareSpec: QuickSpec {
                 }
             }
 
-
             context("when dispatched an action") {
                 var middlewares = [String]()
 

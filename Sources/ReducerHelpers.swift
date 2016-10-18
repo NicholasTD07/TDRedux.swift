@@ -6,7 +6,6 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-
 /// Wraps reducers taking non-optional `State` and `SpecificActionType`
 /// to take optional `State` and `Any` as its `action` param
 ///
@@ -31,7 +30,6 @@ public func Reducer<State, SpecificActionType>(
         return reducer(state, action)
     }
 }
-
 
 /// Takes an array of `Reducer`s and combine them into one
 ///

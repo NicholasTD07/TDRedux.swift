@@ -21,7 +21,6 @@ extension Store {
     /// and the moment it reaches the reducer.
     public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
 
-
     /// Subscribes to changes of a *Store*'s *State*
     ///
     /// It can subscribe to a *Store* by calling `store.subscribe`.
@@ -32,7 +31,6 @@ extension Store {
     ///
     /// - returns: Void
     public typealias Subscriber = (_ store: Store) -> ()
-
 
     /// Returns a new *State* based on the given *State* and *Action*
     ///
@@ -61,7 +59,6 @@ public final class Store<State> {
 
     private var dispatcher: Dispatcher
 
-
     /// The `init` method for a *Store*
     ///
     /// - parameter reducer:     A Reducer function
@@ -80,14 +77,12 @@ public final class Store<State> {
         self.dispatch(InitialAction())
     }
 
-
     /// Dispatches an *Action* to a *Store*'s *Reducer(s)*
     ///
     /// - parameter action: An Action
     public func dispatch(_ action: Action) {
         dispatcher(self, action)
     }
-
 
     /// Subcribes a *Subscriber* to the changes of a *Store*'s *State*
     ///
