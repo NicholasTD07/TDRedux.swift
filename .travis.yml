@@ -24,13 +24,11 @@ env:
 
     # tvOS
     - DESTINATION="OS=10.0,name=Apple TV 1080p" RUN_TESTS="YES" UUID="273D776F-196E-4F2A-AEF2-E1E3EAE99B47" SCHEME="$TVOS_FRAMEWORK_SCHEME" SDK="$TVOS_SDK"
-    # xcode8 image has no tvOS 9.0
-    # - DESTINATION="OS=9.0,name=Apple TV 1080p"     SCHEME="$TVOS_FRAMEWORK_SCHEME"    SDK="$TVOS_SDK"    RUN_TESTS="YES"
+    - DESTINATION="OS=9.0,name=Apple TV 1080p" RUN_TESTS="YES" SCHEME="$TVOS_FRAMEWORK_SCHEME" SDK="$TVOS_SDK"
 
     # watchOS
     - DESTINATION="OS=3.0,name=Apple Watch - 42mm" RUN_TESTS="NO" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK"
-    # Travis's xcode8 image does not have watchOS 2.2... sigh...
-    # - DESTINATION="OS=2.2,name=Apple Watch - 42mm" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK" RUN_TESTS="NO"
+    - DESTINATION="OS=2.2,name=Apple Watch - 42mm" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK" RUN_TESTS="NO"
 
 
   # - xcodebuild -workspace TDRedux.xcodeproj -scheme TDRedux -destination "OS=10.0,name=iPhone 6s Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES test | xcpretty -c
