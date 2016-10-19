@@ -15,23 +15,21 @@ env:
   - MACOS_SDK=macosx10.12
   matrix:
     # iOS
-    - DESTINATION="OS=10.0,name=iPhone SE"     SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
-    - DESTINATION="OS=9.3,name=iPhone 6"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
+    - DESTINATION="OS=10.0,name=iPhone SE" RUN_TESTS="YES" UUID="1A6EAD45-0A28-421A-A6D4-AD0866464FAA" SCHEME="$IOS_FRAMEWORK_SCHEME" SDK="$IOS_SDK"
+    - DESTINATION="OS=9.3,name=iPhone 6" RUN_TESTS="YES" UUID="79A9445F-18A8-4DD1-A9BB-D2FACE658A81" SCHEME="$IOS_FRAMEWORK_SCHEME" SDK="$IOS_SDK"
     # Travis's xcode8 image is in beta and code-signing always times out... sigh...
     # - DESTINATION="OS=8.4,name=iPhone 6"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
 
     # macOS
-    - DESTINATION="arch=x86_64"                    SCHEME="$MACOS_FRAMEWORK_SCHEME"   SDK="$MACOS_SDK"   RUN_TESTS="YES"
+    - DESTINATION="arch=x86_64" RUN_TESTS="YES" SCHEME="$MACOS_FRAMEWORK_SCHEME" SDK="$MACOS_SDK"
 
     # tvOS
-    - DESTINATION="OS=10.0,name=Apple TV 1080p"    SCHEME="$TVOS_FRAMEWORK_SCHEME"    SDK="$TVOS_SDK"    RUN_TESTS="YES"
-    # xcode8 image has no tvOS 9.0
-    # - DESTINATION="OS=9.0,name=Apple TV 1080p"     SCHEME="$TVOS_FRAMEWORK_SCHEME"    SDK="$TVOS_SDK"    RUN_TESTS="YES"
+    - DESTINATION="OS=10.0,name=Apple TV 1080p" RUN_TESTS="YES" UUID="273D776F-196E-4F2A-AEF2-E1E3EAE99B47" SCHEME="$TVOS_FRAMEWORK_SCHEME" SDK="$TVOS_SDK"
+    - DESTINATION="OS=9.0,name=Apple TV 1080p" RUN_TESTS="YES" SCHEME="$TVOS_FRAMEWORK_SCHEME" SDK="$TVOS_SDK"
 
     # watchOS
-    - DESTINATION="OS=3.0,name=Apple Watch - 42mm" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK" RUN_TESTS="NO"
-    # Travis's xcode8 image does not have watchOS 2.2... sigh...
-    # - DESTINATION="OS=2.2,name=Apple Watch - 42mm" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK" RUN_TESTS="NO"
+    - DESTINATION="OS=3.0,name=Apple Watch - 42mm" RUN_TESTS="NO" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK"
+    - DESTINATION="OS=2.2,name=Apple Watch - 42mm" SCHEME="$WATCHOS_FRAMEWORK_SCHEME" SDK="$WATCHOS_SDK" RUN_TESTS="NO"
 
 
   # - xcodebuild -workspace TDRedux.xcodeproj -scheme TDRedux -destination "OS=10.0,name=iPhone 6s Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES test | xcpretty -c
@@ -42,7 +40,9 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  - open -b com.apple.iphonesimulator
+  - xcrun simctl list
+  - xcrun instruments -w "$UUID" || true
+  - sleep 15 # wait for instruments to start the sim
 
   # Commented out because CI constantly failling for no reason...
   # Build Framework in Debug and Run Tests if specified
