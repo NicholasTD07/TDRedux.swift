@@ -42,7 +42,7 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  - open -b com.apple.iphonesimulator
+  - xcrun simctl list
 
   # Commented out because CI constantly failling for no reason...
   # Build Framework in Debug and Run Tests if specified
