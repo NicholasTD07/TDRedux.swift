@@ -40,7 +40,7 @@ github "NicholasTD07/TDRedux.swift" ~> 1.0
 ### [CocoaPods](https://cocoapods.org/)
 
 ```ruby
-pod 'TDRedux.swift', '~> 1.4'
+pod 'TDRedux.swift', '~> 1.0'
 ```
 
 ## TDRedux
