@@ -22,7 +22,7 @@ class DispatchExtensionSpecs: QuickSpec {
 
             context("when dispatched fetchPosts successfully") {
                 beforeEach {
-                    store.dispatch(asyncAction: fetchPosts)
+                    store.dispatch(asyncAction: fetchPostsSuccessfully)
                 }
 
                 it("starts immediately") {
@@ -37,6 +37,24 @@ class DispatchExtensionSpecs: QuickSpec {
                             "post 2",
                             "post 3",
                             ]),
+                        timeout: 0.1
+                    )
+                }
+            }
+
+            context("when dispatched fetchPosts but failed") {
+                beforeEach {
+                    store.dispatch(asyncAction: fetchPostsFailed)
+                }
+
+                it("starts immediately") {
+                    expect(store.state.started).to(beTrue())
+                }
+
+                it("success after 0.1 seconds") {
+                    expect(store.state.error).to(beNil())
+                    expect(store.state.error).toNotEventually(
+                        beNil(),
                         timeout: 0.1
                     )
                 }
@@ -62,7 +80,7 @@ private let reducer = TDRedux.Reducer(initialState: State.initial) {
     }
 }
 
-private func fetchPosts(dispatch: @escaping Store.Dispatch) {
+private func fetchPostsSuccessfully(dispatch: @escaping Store.Dispatch) {
     dispatch(Actions.fetchPosts(.start))
 
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -71,6 +89,14 @@ private func fetchPosts(dispatch: @escaping Store.Dispatch) {
             "post 2",
             "post 3",
         ])))
+    }
+}
+
+private func fetchPostsFailed(dispatch: @escaping Store.Dispatch) {
+    dispatch(Actions.fetchPosts(.start))
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+        dispatch(Actions.fetchPosts(.failed(error: "ooops")))
     }
 }
 
