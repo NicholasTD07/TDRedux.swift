@@ -7,6 +7,12 @@
 //
 
 extension Store {
+
+    /// Subscribe to changes of a *Store*'s *State*
+    ///
+    /// - parameter state:  A State
+    ///
+    /// - returns: Void
     public typealias StateSubscriber = (_ state: State) -> ()
 
     /// Subcribes a *StateSubscriber* (takes a *State* rather than a *Store*)
