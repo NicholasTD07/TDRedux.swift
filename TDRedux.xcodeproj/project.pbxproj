@@ -20,6 +20,9 @@
 		6C9AFBAD1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */; };
 		6C9AFBAE1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */; };
 		6C9AFBAF1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */; };
+		6CFED2D01DB8A2670035F962 /* DispatchExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */; };
+		6CFED2D11DB8A2670035F962 /* DispatchExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */; };
+		6CFED2D21DB8A2680035F962 /* DispatchExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */; };
 		7511D62D1D964A1D008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7511D6371D964A3C008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
 		7511D63A1D964B03008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
@@ -63,6 +66,7 @@
 		6C74E58C1D9DF79A00F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-appletvos/Nimble.framework"; sourceTree = "<group>"; };
 		6C74E58D1D9DF79A00F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-appletvos/Quick.framework"; sourceTree = "<group>"; };
 		6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+Subscribe.swift"; sourceTree = "<group>"; };
+		6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchExtensionSpecs.swift; sourceTree = "<group>"; };
 		7511D61C1D964A1D008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7511D61F1D964A1D008016CF /* TDRedux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.h; sourceTree = "<group>"; };
 		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */,
 				753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */,
 				759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */,
+				6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -605,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFED2D21DB8A2680035F962 /* DispatchExtensionSpecs.swift in Sources */,
 				753785E31D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
 				753785DF1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
 				7591341C1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */,
@@ -617,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFED2D11DB8A2670035F962 /* DispatchExtensionSpecs.swift in Sources */,
 				753785E21D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
 				753785DE1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
 				7591341B1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */,
@@ -640,6 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFED2D01DB8A2670035F962 /* DispatchExtensionSpecs.swift in Sources */,
 				753785E11D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
 				753785DD1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
 				7591341A1DB605D0008AEF41 /* SubscribeExtensionSpecs.swift in Sources */,
