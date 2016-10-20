@@ -54,8 +54,6 @@ private let reducer = TDRedux.Reducer(initialState: State.initial) {
         switch action {
         case .start:
             return State(started: true, posts: [], error: nil)
-
-            return state
         case let .success(posts):
             return State(started: false, posts: posts, error: nil)
         case let .failed(error):
