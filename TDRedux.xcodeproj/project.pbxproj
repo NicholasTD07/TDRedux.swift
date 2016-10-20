@@ -55,6 +55,9 @@
 		7591341A1DB605D0008AEF41 /* SubscribeExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */; };
 		7591341B1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */; };
 		7591341C1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */; };
+		75A244C71DB8D3C00005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
+		75A244C81DB8D3C10005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
+		75A244C91DB8D3C20005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -664,6 +667,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A244C91DB8D3C20005BE0F /* Store+Dispatch.swift in Sources */,
 				7511D6951D97E84D008016CF /* Action.swift in Sources */,
 				7511D6961D97E84D008016CF /* Store.swift in Sources */,
 				6C9AFBAF1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
@@ -675,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A244C81DB8D3C10005BE0F /* Store+Dispatch.swift in Sources */,
 				7511D6921D97E847008016CF /* Action.swift in Sources */,
 				7511D6931D97E847008016CF /* Store.swift in Sources */,
 				6C9AFBAE1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
@@ -686,6 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A244C71DB8D3C00005BE0F /* Store+Dispatch.swift in Sources */,
 				7511D68F1D97E83F008016CF /* Action.swift in Sources */,
 				7511D6901D97E83F008016CF /* Store.swift in Sources */,
 				6C9AFBAD1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
