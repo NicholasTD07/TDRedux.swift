@@ -11,8 +11,6 @@ import Nimble
 
 import TDRedux
 
-var started: Bool = false
-
 class DispatchExtensionSpecs: QuickSpec {
     override func spec() {
         describe("Dispatching async actions") {
@@ -20,7 +18,6 @@ class DispatchExtensionSpecs: QuickSpec {
 
             beforeEach {
                 store = Store.init(with: reducer)
-                started = false
             }
 
             context("when dispatched fetchPosts successfully") {
@@ -29,7 +26,7 @@ class DispatchExtensionSpecs: QuickSpec {
                 }
 
                 it("starts immediately") {
-                    expect(started).to(beTrue())
+                    expect(store.state.started).to(beTrue())
                 }
 
                 it("success after 0.1 seconds") {
@@ -56,13 +53,13 @@ private let reducer = TDRedux.Reducer(initialState: State.initial) {
     case let .fetchPosts(action):
         switch action {
         case .start:
-            started = true
+            return State(started: true, posts: [], error: nil)
 
             return state
         case let .success(posts):
-            return State(posts: posts, error: nil)
+            return State(started: false, posts: posts, error: nil)
         case let .failed(error):
-            return State(posts: [], error: error)
+            return State(started: false, posts: [], error: error)
         }
     }
 }
@@ -80,8 +77,9 @@ private func fetchPosts(dispatch: @escaping Store.Dispatch) {
 }
 
 private struct State {
-    static let initial = State(posts: [], error: nil)
+    static let initial = State(started: false, posts: [], error: nil)
 
+    let started: Bool
     let posts: [String]
     let error: String?
 }
