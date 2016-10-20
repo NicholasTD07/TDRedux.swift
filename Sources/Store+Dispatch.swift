@@ -7,9 +7,25 @@
 //
 
 extension Store {
-    public typealias Dispatch = (Action) -> ()
-    public typealias AsyncAction = (@escaping Store.Dispatch) -> ()
 
+    /// Dispatches the given *Action* to its binded *Store*
+    ///
+    /// - parameter action: An Action dispatched to the Store
+    ///
+    /// - returns: Void
+    public typealias Dispatch = (_ action: Action) -> ()
+
+    /// Async actions which will call the dispatch function
+    ///
+    /// - parameter dispatch: a Dispatch function
+    ///
+    /// - returns: Void
+    public typealias AsyncAction = (_ dispath: @escaping Store.Dispatch) -> ()
+
+
+    /// Dispatches *AsyncActions*
+    ///
+    /// - parameter action: An AsyncAction
     public func dispatch(asyncAction action: AsyncAction) {
         action(dispatch)
     }
