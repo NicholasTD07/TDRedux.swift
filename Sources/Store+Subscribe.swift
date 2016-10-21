@@ -12,7 +12,7 @@ extension Store {
     /// to the changes of a *Store*'s *State*
     ///
     /// - parameter subscriber: A StateSubscriber function
-    public func subscribe(with subscriber: @escaping StateSubscriber) {
+    public final func subscribe(with subscriber: @escaping StateSubscriber) {
         self.subscribe { store in
             subscriber(store.state)
         }
@@ -23,7 +23,7 @@ extension Store {
     /// when the *State* of a *Store* changes
     ///
     /// - parameter subscriber: An UpdateSubscriber
-    public func subscribe(with subscriber: @escaping UpdateSubscriber) {
+    public final func subscribe(with subscriber: @escaping UpdateSubscriber) {
         self.subscribe { (store: Store) in
             subscriber()
         }
@@ -35,7 +35,7 @@ extension Store {
     ///
     /// - parameter converter:  A function converts State to SpecificState
     /// - parameter subscriber: A SpecificStateSubscriber function
-    public func subscribe<SpecificState>(
+    public final func subscribe<SpecificState>(
         withConverter converter: @escaping (State) -> SpecificState,
         subscriber: @escaping (SpecificState) -> ()
     ) {

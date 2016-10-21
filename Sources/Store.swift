@@ -20,7 +20,7 @@ public final class Store<State> {
     /// An array of *Subscribers*
     public final var subscribers = [Subscriber]()
 
-    private var dispatcher: Dispatcher
+    private final var dispatcher: Dispatcher
 
     /// The `init` method for a *Store*
     ///
@@ -43,7 +43,7 @@ public final class Store<State> {
     /// Dispatches an *Action* to a *Store*'s *Reducer(s)*
     ///
     /// - parameter action: An Action
-    public func dispatch(_ action: Action) {
+    public final func dispatch(_ action: Action) {
         dispatcher(self, action)
     }
 
