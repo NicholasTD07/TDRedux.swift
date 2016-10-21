@@ -58,6 +58,10 @@
 		75A244C71DB8D3C00005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
 		75A244C81DB8D3C10005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
 		75A244C91DB8D3C20005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
+		75A244D51DB9F4EE0005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
+		75A244D61DB9F99F0005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
+		75A244D71DB9F9A00005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
+		75A244D81DB9F9A10005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +92,7 @@
 		753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineReducersSpec.swift; sourceTree = "<group>"; };
 		753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareSpec.swift; sourceTree = "<group>"; };
 		759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeExtensionSpecs.swift; sourceTree = "<group>"; };
+		75A244D41DB9F4EE0005BE0F /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				7511D6391D964B03008016CF /* Action.swift */,
+				75A244D41DB9F4EE0005BE0F /* Types.swift */,
 				7511D6361D964A3C008016CF /* Store.swift */,
 				6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */,
 				6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */,
@@ -645,6 +651,7 @@
 				6CFED2D41DB8A5750035F962 /* Store+Dispatch.swift in Sources */,
 				7511D6371D964A3C008016CF /* Store.swift in Sources */,
 				7511D63C1D964BAA008016CF /* ReducerHelpers.swift in Sources */,
+				75A244D51DB9F4EE0005BE0F /* Types.swift in Sources */,
 				6C9AFBAC1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
 				7511D63A1D964B03008016CF /* Action.swift in Sources */,
 			);
@@ -670,6 +677,7 @@
 				75A244C91DB8D3C20005BE0F /* Store+Dispatch.swift in Sources */,
 				7511D6951D97E84D008016CF /* Action.swift in Sources */,
 				7511D6961D97E84D008016CF /* Store.swift in Sources */,
+				75A244D81DB9F9A10005BE0F /* Types.swift in Sources */,
 				6C9AFBAF1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
 				7511D6971D97E84D008016CF /* ReducerHelpers.swift in Sources */,
 			);
@@ -682,6 +690,7 @@
 				75A244C81DB8D3C10005BE0F /* Store+Dispatch.swift in Sources */,
 				7511D6921D97E847008016CF /* Action.swift in Sources */,
 				7511D6931D97E847008016CF /* Store.swift in Sources */,
+				75A244D71DB9F9A00005BE0F /* Types.swift in Sources */,
 				6C9AFBAE1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
 				7511D6941D97E847008016CF /* ReducerHelpers.swift in Sources */,
 			);
@@ -694,6 +703,7 @@
 				75A244C71DB8D3C00005BE0F /* Store+Dispatch.swift in Sources */,
 				7511D68F1D97E83F008016CF /* Action.swift in Sources */,
 				7511D6901D97E83F008016CF /* Store.swift in Sources */,
+				75A244D61DB9F99F0005BE0F /* Types.swift in Sources */,
 				6C9AFBAD1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
 				7511D6911D97E83F008016CF /* ReducerHelpers.swift in Sources */,
 			);

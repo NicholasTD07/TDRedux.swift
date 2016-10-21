@@ -6,43 +6,6 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-// MARK: - Types
-extension Store {
-
-    /// Dispatches the given *Action* to the given *Store*
-    ///
-    /// - parameter store:  A Store
-    /// - parameter action: an Action dispatched to the Store
-    ///
-    /// - returns: Void
-    public typealias Dispatcher = (_ store: Store, _ action: Action) -> Void
-
-    /// It provides a third-party extension point between dispatching an action,
-    /// and the moment it reaches the reducer.
-    public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
-
-    /// Subscribes to changes of a *Store*'s *State*
-    ///
-    /// It can subscribe to a *Store* by calling `store.subscribe`.
-    ///
-    /// When a Store's State changes, the Store will notify the change to all of its *Subscribers*.
-    ///
-    /// - parameter store: A Store
-    ///
-    /// - returns: Void
-    public typealias Subscriber = (_ store: Store) -> ()
-
-    /// Returns a new *State* based on the given *State* and *Action*
-    ///
-    /// - parameter state:  the current State of a Store
-    /// - parameter action: an Action dispatched to the Store
-    ///
-    /// - returns: A new State
-    public typealias Reducer = (_ state: State?, _ action: Action) -> State
-}
-
-// MARK: - Store
-
 /// Holds a *State* in its `state`.
 ///
 /// You can
@@ -57,7 +20,7 @@ public final class Store<State> {
     /// An array of *Subscribers*
     public final var subscribers = [Subscriber]()
 
-    private var dispatcher: Dispatcher
+    private final var dispatcher: Dispatcher
 
     /// The `init` method for a *Store*
     ///
@@ -80,7 +43,7 @@ public final class Store<State> {
     /// Dispatches an *Action* to a *Store*'s *Reducer(s)*
     ///
     /// - parameter action: An Action
-    public func dispatch(_ action: Action) {
+    public final func dispatch(_ action: Action) {
         dispatcher(self, action)
     }
 

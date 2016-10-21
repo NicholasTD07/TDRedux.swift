@@ -60,6 +60,28 @@ class SubscribeExtensionSpecs: QuickSpec {
                     }
                 }
             }
+
+            context("when subscribed to a store's state") {
+                var called: Bool!
+
+                beforeEach {
+                    called = false
+                    store.subscribe {
+                        called = true
+                    }
+                }
+
+                context("when the store's state changed") {
+                    beforeEach {
+                        store.dispatch(ToDoActions.addToDo(title: "go buy me milk"))
+                    }
+
+                    it("gets the change") {
+                        expect(called).to(beTrue())
+                    }
+                }
+            }
+
         }
     }
 }
