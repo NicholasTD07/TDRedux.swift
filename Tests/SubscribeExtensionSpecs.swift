@@ -96,7 +96,7 @@ private let reducer = Reducer(initialState: ToDoState.initial) {
     }
 }
 
-private enum ToDoActions {
+private enum ToDoActions: TDRedux.Action {
     case addToDo(title: String)
     case filter(with: Filter)
 }
