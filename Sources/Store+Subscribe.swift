@@ -15,6 +15,8 @@ extension Store {
     /// - returns: Void
     public typealias StateSubscriber = (_ state: State) -> ()
 
+    public typealias UpdateSubscriber = () -> ()
+
     /// Subcribes a *StateSubscriber* (takes a *State* rather than a *Store*)
     /// to the changes of a *Store*'s *State*
     ///
@@ -22,6 +24,12 @@ extension Store {
     public func subscribe(with subscriber: @escaping StateSubscriber) {
         self.subscribe { store in
             subscriber(store.state)
+        }
+    }
+
+    public func subscribe(with subscriber: @escaping UpdateSubscriber) {
+        self.subscribe { (store: Store) in
+            subscriber()
         }
     }
 
