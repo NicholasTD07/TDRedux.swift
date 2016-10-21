@@ -60,9 +60,9 @@ extension Store {
     /// and the moment it reaches the reducer.
     public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
 
-    /// Dispatches the given *Action* to its binded *Store*
+    /// Dispatches the given *Action* to the binded *Store*
     ///
-    /// - parameter action: An Action dispatched to the Store
+    /// - parameter action: An Action will be dispatched to the binded Store
     ///
     /// - returns: Void
     public typealias Dispatch = (_ action: Action) -> ()
