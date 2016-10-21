@@ -37,7 +37,7 @@ class DispatchExtensionSpecs: QuickSpec {
                             "post 2",
                             "post 3",
                             ]),
-                        timeout: 0.1
+                        timeout: 0.15
                     )
                 }
             }
@@ -55,7 +55,7 @@ class DispatchExtensionSpecs: QuickSpec {
                     expect(store.state.error).to(beNil())
                     expect(store.state.error).toNotEventually(
                         beNil(),
-                        timeout: 0.1
+                        timeout: 0.15
                     )
                 }
             }
