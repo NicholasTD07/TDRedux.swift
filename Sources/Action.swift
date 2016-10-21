@@ -9,7 +9,7 @@
 /// An *Action* describes what happen**ed**
 /// while it may carry some data, e.g.
 /// `AddTodo(text: "buy milk")` or `ToggleTodo(atIndex: 1)`
-public typealias Action = Any
+public protocol Action { }
 
 /// The `InitialAction` is the action a *Store* will dispatch
 /// while initializing so that the *Store* can get its initial

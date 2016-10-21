@@ -108,8 +108,8 @@ private struct State {
     let error: String?
 }
 
-private enum Actions {
-    enum FetchPosts {
+private enum Actions: TDRedux.Action {
+    enum FetchPosts: TDRedux.Action {
         case start
         case success(posts: [String])
         case failed(error: String)
