@@ -12,15 +12,15 @@
 ///  - create a `Store` with a *Reducer*
 ///  - dispatch *Actions* to change a *Store*'s *State*
 ///  - subscribe to changes happens to the *State* of a *Store* using *Subscribers*
-public final class Store<State> {
+public class Store<State> {
 
     /// the entire internal state of an application
-    public fileprivate(set) final var state: State
+    public fileprivate(set) var state: State
 
     /// An array of *Subscribers*
-    public final var subscribers = [Subscriber]()
+    public var subscribers = [Subscriber]()
 
-    private final var dispatcher: Dispatcher
+    private var dispatcher: Dispatcher
 
     /// The `init` method for a *Store*
     ///
@@ -43,14 +43,14 @@ public final class Store<State> {
     /// Dispatches an *Action* to a *Store*'s *Reducer(s)*
     ///
     /// - parameter action: An Action
-    public final func dispatch(_ action: Action) {
+    public func dispatch(_ action: Action) {
         dispatcher(self, action)
     }
 
     /// Subcribes a *Subscriber* to the changes of a *Store*'s *State*
     ///
     /// - parameter subscriber: A Subscriber function
-    public final func subscribe(with subscriber: @escaping Subscriber) {
+    public func subscribe(with subscriber: @escaping Subscriber) {
         subscribers.append(subscriber)
         subscriber(self)
     }
