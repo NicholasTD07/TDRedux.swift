@@ -7,7 +7,7 @@
 [![Travis](https://img.shields.io/travis/NicholasTD07/TDRedux.swift/master.svg?maxAge=3600)](https://travis-ci.org/NicholasTD07/TDRedux.swift)
 [![Codecov](https://img.shields.io/codecov/c/github/NicholasTD07/TDRedux.swift/master.svg?maxAge=3600)](https://codecov.io/gh/NicholasTD07/TDRedux.swift)
 [![CocoaPods](https://img.shields.io/cocoapods/p/TDRedux.swift.svg?maxAge=3600)](http://cocoadocs.org/docsets/TDRedux.swift/)
-[![CocoaPods](https://img.shields.io/cocoapods/l/TDRedux.swift.svg?maxAge=3600)](./LICENSE)
+[![License](https://img.shields.io/github/license/NicholasTD07/TDRedux.swift.svg)](./LICENSE)
 
 
 Yet another Redux written in Swift
