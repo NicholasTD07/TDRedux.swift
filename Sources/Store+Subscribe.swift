@@ -18,6 +18,11 @@ extension Store {
         }
     }
 
+
+    /// The given *UpdateSubscriber* will be called
+    /// when the *State* of a *Store* changes
+    ///
+    /// - parameter subscriber: An UpdateSubscriber
     public func subscribe(with subscriber: @escaping UpdateSubscriber) {
         self.subscribe { (store: Store) in
             subscriber()
