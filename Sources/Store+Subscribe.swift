@@ -24,7 +24,7 @@ extension Store {
     ///
     /// - parameter subscriber: An UpdateSubscriber
     public final func subscribe(with subscriber: @escaping UpdateSubscriber) {
-        self.subscribe { (store: Store) in
+        self.subscribe { (_: Store) in
             subscriber()
         }
     }
