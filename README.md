@@ -25,7 +25,7 @@ let package = Package(
     name: "Example",
     dependencies: [
         .Package(url: "https://github.com/NicholasTD07/TDRedux.swift.git",
-                 majorVersion: 1),
+                 majorVersion: 2),
     ]
 )
 
@@ -34,13 +34,13 @@ let package = Package(
 ### [Carthage](https://github.com/Carthage/Carthage)
 
 ```
-github "NicholasTD07/TDRedux.swift" ~> 1.0
+github "NicholasTD07/TDRedux.swift" ~> 2.0
 ```
 
 ### [CocoaPods](https://cocoapods.org/)
 
 ```ruby
-pod 'TDRedux.swift', '~> 1.0'
+pod 'TDRedux.swift', '~> 2.0'
 ```
 
 ## TDRedux
