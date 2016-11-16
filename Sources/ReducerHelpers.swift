@@ -41,6 +41,8 @@ public func combine<State>(reducers: [(State?, Any) -> State]) -> (State?, Any) 
         let reducedState = reducers.reduce(state) { (state, reducer) -> State in
             return reducer(state, action)
         }
+        // swiftlint:disable force_unwrapping
         return reducedState!
+        // swiftlint:enable force_unwrapping
     }
 }
