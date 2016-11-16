@@ -36,7 +36,6 @@ public func Reducer<State, SpecificActionType>(
 /// - parameter reducers: an array of `Reducer`s who takes and returns the same type of `State`
 ///
 /// - returns: A Reducer function
-
 public func combine<State>(reducers: [(State?, Any) -> State]) -> (State?, Any) -> State {
     return { (state: State?, action: Any) -> State in
         let reducedState = reducers.reduce(state) { (state, reducer) -> State in
