@@ -38,8 +38,11 @@ public func Reducer<State, SpecificActionType>(
 /// - returns: A Reducer function
 public func combine<State>(reducers: [(State?, Any) -> State]) -> (State?, Any) -> State {
     return { (state: State?, action: Any) -> State in
-        return reducers.reduce(state) { (state, reducer) -> State! in
+        let reducedState = reducers.reduce(state) { (state, reducer) -> State in
             return reducer(state, action)
         }
+        // swiftlint:disable force_unwrapping
+        return reducedState!
+        // swiftlint:enable force_unwrapping
     }
 }
