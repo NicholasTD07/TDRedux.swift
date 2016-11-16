@@ -170,6 +170,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6CBB381F1DDC092E00A24FCF /* TDReduxTests */ = {
+			isa = PBXGroup;
+			children = (
+				753785CE1D9F2677004703E0 /* StoreSpec.swift */,
+				753785D61D9F2B39004703E0 /* ReducerSpec.swift */,
+				753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */,
+				753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */,
+				759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */,
+				6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */,
+			);
+			path = TDReduxTests;
+			sourceTree = "<group>";
+		};
 		7511D6121D964A1D008016CF = {
 			isa = PBXGroup;
 			children = (
@@ -213,12 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				7511D62C1D964A1D008016CF /* Info.plist */,
-				753785CE1D9F2677004703E0 /* StoreSpec.swift */,
-				753785D61D9F2B39004703E0 /* ReducerSpec.swift */,
-				753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */,
-				753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */,
-				759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */,
-				6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */,
+				6CBB381F1DDC092E00A24FCF /* TDReduxTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
