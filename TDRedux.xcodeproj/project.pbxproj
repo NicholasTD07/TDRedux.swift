@@ -1,1159 +1,304 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		6C74E5861D9DF78000F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5841D9DF78000F9742C /* Nimble.framework */; };
-		6C74E5871D9DF78000F9742C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5851D9DF78000F9742C /* Quick.framework */; };
-		6C74E58A1D9DF79300F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5881D9DF79300F9742C /* Nimble.framework */; };
-		6C74E58B1D9DF79300F9742C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E5891D9DF79300F9742C /* Quick.framework */; };
-		6C74E58E1D9DF79A00F9742C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E58C1D9DF79A00F9742C /* Nimble.framework */; };
-		6C74E58F1D9DF79A00F9742C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C74E58D1D9DF79A00F9742C /* Quick.framework */; };
-		6C74E5911D9E1E5100F9742C /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D61C1D964A1D008016CF /* TDRedux.framework */; };
-		6C74E5921D9E1E5900F9742C /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6871D97E04E008016CF /* TDRedux.framework */; };
-		6C74E5931D9E1E6100F9742C /* TDRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7511D6791D97DCF1008016CF /* TDRedux.framework */; };
-		6C9AFBAC1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */; };
-		6C9AFBAD1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */; };
-		6C9AFBAE1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */; };
-		6C9AFBAF1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */; };
-		6CFED2D11DB8A2670035F962 /* DispatchExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */; };
-		6CFED2D21DB8A2680035F962 /* DispatchExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */; };
-		6CFED2D41DB8A5750035F962 /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
-		6CFED2D51DB8A69E0035F962 /* DispatchExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */; };
-		7511D62D1D964A1D008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7511D6371D964A3C008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
-		7511D63A1D964B03008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
-		7511D63C1D964BAA008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
-		7511D6571D97CF9C008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7511D6811D97DD3A008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7511D68F1D97E83F008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
-		7511D6901D97E83F008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
-		7511D6911D97E83F008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
-		7511D6921D97E847008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
-		7511D6931D97E847008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
-		7511D6941D97E847008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
-		7511D6951D97E84D008016CF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6391D964B03008016CF /* Action.swift */; };
-		7511D6961D97E84D008016CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D6361D964A3C008016CF /* Store.swift */; };
-		7511D6971D97E84D008016CF /* ReducerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511D63B1D964BAA008016CF /* ReducerHelpers.swift */; };
-		7511D6981D97E9C0008016CF /* TDRedux.h in Headers */ = {isa = PBXBuildFile; fileRef = 7511D61F1D964A1D008016CF /* TDRedux.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		753785D31D9F26AE004703E0 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785CE1D9F2677004703E0 /* StoreSpec.swift */; };
-		753785D41D9F26AE004703E0 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785CE1D9F2677004703E0 /* StoreSpec.swift */; };
-		753785D51D9F26AF004703E0 /* StoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785CE1D9F2677004703E0 /* StoreSpec.swift */; };
-		753785D71D9F2B39004703E0 /* ReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785D61D9F2B39004703E0 /* ReducerSpec.swift */; };
-		753785D81D9F2B39004703E0 /* ReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785D61D9F2B39004703E0 /* ReducerSpec.swift */; };
-		753785D91D9F2B39004703E0 /* ReducerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785D61D9F2B39004703E0 /* ReducerSpec.swift */; };
-		753785DD1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
-		753785DE1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
-		753785DF1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */; };
-		753785E11D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */; };
-		753785E21D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */; };
-		753785E31D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */; };
-		7591341A1DB605D0008AEF41 /* SubscribeExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */; };
-		7591341B1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */; };
-		7591341C1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */; };
-		75A244C71DB8D3C00005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
-		75A244C81DB8D3C10005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
-		75A244C91DB8D3C20005BE0F /* Store+Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */; };
-		75A244D51DB9F4EE0005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
-		75A244D61DB9F99F0005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
-		75A244D71DB9F9A00005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
-		75A244D81DB9F9A10005BE0F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A244D41DB9F4EE0005BE0F /* Types.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C3A50EC1D98E49D00CFCCCE /* TDReduxTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C74E5841D9DF78000F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		6C74E5851D9DF78000F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
-		6C74E5881D9DF79300F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Checkouts/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
-		6C74E5891D9DF79300F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Checkouts/Quick/build/Debug/Quick.framework; sourceTree = "<group>"; };
-		6C74E58C1D9DF79A00F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-appletvos/Nimble.framework"; sourceTree = "<group>"; };
-		6C74E58D1D9DF79A00F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-appletvos/Quick.framework"; sourceTree = "<group>"; };
-		6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Store+Subscribe.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchExtensionSpecs.swift; sourceTree = "<group>"; };
-		6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+Dispatch.swift"; sourceTree = "<group>"; };
-		7511D61C1D964A1D008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7511D61F1D964A1D008016CF /* TDRedux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDRedux.h; sourceTree = "<group>"; };
-		7511D6201D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7511D6251D964A1D008016CF /* TDReduxTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7511D62C1D964A1D008016CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7511D6361D964A3C008016CF /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Store.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		7511D6391D964B03008016CF /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		7511D63B1D964BAA008016CF /* ReducerHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReducerHelpers.swift; sourceTree = "<group>"; };
-		7511D64F1D97CDCC008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7511D6791D97DCF1008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7511D6871D97E04E008016CF /* TDRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		753785CE1D9F2677004703E0 /* StoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSpec.swift; sourceTree = "<group>"; };
-		753785D61D9F2B39004703E0 /* ReducerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReducerSpec.swift; sourceTree = "<group>"; };
-		753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineReducersSpec.swift; sourceTree = "<group>"; };
-		753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareSpec.swift; sourceTree = "<group>"; };
-		759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeExtensionSpecs.swift; sourceTree = "<group>"; };
-		75A244D41DB9F4EE0005BE0F /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		6C1323601D99073700665F4E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C74E5931D9E1E6100F9742C /* TDRedux.framework in Frameworks */,
-				6C74E58E1D9DF79A00F9742C /* Nimble.framework in Frameworks */,
-				6C74E58F1D9DF79A00F9742C /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C3A50E91D98E49D00CFCCCE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C74E5921D9E1E5900F9742C /* TDRedux.framework in Frameworks */,
-				6C74E58A1D9DF79300F9742C /* Nimble.framework in Frameworks */,
-				6C74E58B1D9DF79300F9742C /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6181D964A1D008016CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6221D964A1D008016CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C74E5911D9E1E5100F9742C /* TDRedux.framework in Frameworks */,
-				6C74E5861D9DF78000F9742C /* Nimble.framework in Frameworks */,
-				6C74E5871D9DF78000F9742C /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D64B1D97CDCC008016CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6751D97DCF1008016CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6831D97E04E008016CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		6C74E5831D9DF78000F9742C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C74E58C1D9DF79A00F9742C /* Nimble.framework */,
-				6C74E58D1D9DF79A00F9742C /* Quick.framework */,
-				6C74E5881D9DF79300F9742C /* Nimble.framework */,
-				6C74E5891D9DF79300F9742C /* Quick.framework */,
-				6C74E5841D9DF78000F9742C /* Nimble.framework */,
-				6C74E5851D9DF78000F9742C /* Quick.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6CBB381F1DDC092E00A24FCF /* TDReduxTests */ = {
-			isa = PBXGroup;
-			children = (
-				753785CE1D9F2677004703E0 /* StoreSpec.swift */,
-				753785D61D9F2B39004703E0 /* ReducerSpec.swift */,
-				753785DC1D9F2EDE004703E0 /* CombineReducersSpec.swift */,
-				753785E01D9FDF9B004703E0 /* MiddlewareSpec.swift */,
-				759134181DB605A1008AEF41 /* SubscribeExtensionSpecs.swift */,
-				6CFED2CE1DB8A25B0035F962 /* DispatchExtensionSpecs.swift */,
-			);
-			path = TDReduxTests;
-			sourceTree = "<group>";
-		};
-		7511D6121D964A1D008016CF = {
-			isa = PBXGroup;
-			children = (
-				7511D61E1D964A1D008016CF /* TDRedux */,
-				7511D6291D964A1D008016CF /* Tests */,
-				7511D61D1D964A1D008016CF /* Products */,
-				6C74E5831D9DF78000F9742C /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		7511D61D1D964A1D008016CF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7511D61C1D964A1D008016CF /* TDRedux.framework */,
-				7511D6251D964A1D008016CF /* TDReduxTests-iOS.xctest */,
-				7511D64F1D97CDCC008016CF /* TDRedux.framework */,
-				7511D6791D97DCF1008016CF /* TDRedux.framework */,
-				7511D6871D97E04E008016CF /* TDRedux.framework */,
-				6C3A50EC1D98E49D00CFCCCE /* TDReduxTests-macOS.xctest */,
-				6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7511D61E1D964A1D008016CF /* TDRedux */ = {
-			isa = PBXGroup;
-			children = (
-				7511D6391D964B03008016CF /* Action.swift */,
-				75A244D41DB9F4EE0005BE0F /* Types.swift */,
-				7511D6361D964A3C008016CF /* Store.swift */,
-				6C9AFBAB1DB5A4FD00592817 /* Store+Subscribe.swift */,
-				6CFED2D31DB8A5750035F962 /* Store+Dispatch.swift */,
-				7511D63B1D964BAA008016CF /* ReducerHelpers.swift */,
-				7511D6381D964AF0008016CF /* Support */,
-			);
-			name = TDRedux;
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		7511D6291D964A1D008016CF /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				7511D62C1D964A1D008016CF /* Info.plist */,
-				6CBB381F1DDC092E00A24FCF /* TDReduxTests */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		7511D6381D964AF0008016CF /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				7511D61F1D964A1D008016CF /* TDRedux.h */,
-				7511D6201D964A1D008016CF /* Info.plist */,
-			);
-			name = Support;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		7511D6191D964A1D008016CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7511D62D1D964A1D008016CF /* TDRedux.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D64C1D97CDCC008016CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7511D6571D97CF9C008016CF /* TDRedux.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6761D97DCF1008016CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7511D6811D97DD3A008016CF /* TDRedux.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6841D97E04E008016CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7511D6981D97E9C0008016CF /* TDRedux.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		6C1323621D99073700665F4E /* TDReduxTests-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6C13236D1D99073700665F4E /* Build configuration list for PBXNativeTarget "TDReduxTests-tvOS" */;
-			buildPhases = (
-				6C13235F1D99073700665F4E /* Sources */,
-				6C1323601D99073700665F4E /* Frameworks */,
-				6C1323611D99073700665F4E /* Resources */,
-				753785DB1D9F2CDB004703E0 /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TDReduxTests-tvOS";
-			productName = "TDReduxTests-tvOS";
-			productReference = 6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6C3A50EB1D98E49D00CFCCCE /* TDReduxTests-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6C3A50F41D98E49D00CFCCCE /* Build configuration list for PBXNativeTarget "TDReduxTests-macOS" */;
-			buildPhases = (
-				6C3A50E81D98E49D00CFCCCE /* Sources */,
-				6C3A50E91D98E49D00CFCCCE /* Frameworks */,
-				6C3A50EA1D98E49D00CFCCCE /* Resources */,
-				6C4A8C121D9CED400037265A /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TDReduxTests-macOS";
-			productName = "TDReduxTests-macOS";
-			productReference = 6C3A50EC1D98E49D00CFCCCE /* TDReduxTests-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7511D61B1D964A1D008016CF /* TDRedux-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux-iOS" */;
-			buildPhases = (
-				7511D6171D964A1D008016CF /* Sources */,
-				7511D6181D964A1D008016CF /* Frameworks */,
-				7511D6191D964A1D008016CF /* Headers */,
-				7511D61A1D964A1D008016CF /* Resources */,
-				6C4A8C131D9CED6D0037265A /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TDRedux-iOS";
-			productName = TDRedux.swift;
-			productReference = 7511D61C1D964A1D008016CF /* TDRedux.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7511D6241D964A1D008016CF /* TDReduxTests-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests-iOS" */;
-			buildPhases = (
-				7511D6211D964A1D008016CF /* Sources */,
-				7511D6221D964A1D008016CF /* Frameworks */,
-				7511D6231D964A1D008016CF /* Resources */,
-				753785DA1D9F2CC8004703E0 /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TDReduxTests-iOS";
-			productName = TDRedux.swiftTests;
-			productReference = 7511D6251D964A1D008016CF /* TDReduxTests-iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7511D64E1D97CDCC008016CF /* TDRedux-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6541D97CDCC008016CF /* Build configuration list for PBXNativeTarget "TDRedux-watchOS" */;
-			buildPhases = (
-				7511D64A1D97CDCC008016CF /* Sources */,
-				7511D64B1D97CDCC008016CF /* Frameworks */,
-				7511D64C1D97CDCC008016CF /* Headers */,
-				7511D64D1D97CDCC008016CF /* Resources */,
-				6C4A8C161D9CED8A0037265A /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TDRedux-watchOS";
-			productName = "TDRedux-watchOS";
-			productReference = 7511D64F1D97CDCC008016CF /* TDRedux.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7511D6781D97DCF1008016CF /* TDRedux-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D6801D97DCF1008016CF /* Build configuration list for PBXNativeTarget "TDRedux-tvOS" */;
-			buildPhases = (
-				7511D6741D97DCF1008016CF /* Sources */,
-				7511D6751D97DCF1008016CF /* Frameworks */,
-				7511D6761D97DCF1008016CF /* Headers */,
-				7511D6771D97DCF1008016CF /* Resources */,
-				6C4A8C151D9CED820037265A /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TDRedux-tvOS";
-			productName = "TDRedux-tvOS";
-			productReference = 7511D6791D97DCF1008016CF /* TDRedux.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7511D6861D97E04E008016CF /* TDRedux-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7511D68C1D97E04E008016CF /* Build configuration list for PBXNativeTarget "TDRedux-macOS" */;
-			buildPhases = (
-				7511D6821D97E04E008016CF /* Sources */,
-				7511D6831D97E04E008016CF /* Frameworks */,
-				7511D6841D97E04E008016CF /* Headers */,
-				7511D6851D97E04E008016CF /* Resources */,
-				6C4A8C141D9CED7B0037265A /* SwiftLint */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TDRedux-macOS";
-			productName = "TDRedux-macOS";
-			productReference = 7511D6871D97E04E008016CF /* TDRedux.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		7511D6131D964A1D008016CF /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = nicktd;
-				TargetAttributes = {
-					6C1323621D99073700665F4E = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
-					6C3A50EB1D98E49D00CFCCCE = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
-					7511D61B1D964A1D008016CF = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
-						ProvisioningStyle = Manual;
-					};
-					7511D6241D964A1D008016CF = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
-					};
-					7511D64E1D97CDCC008016CF = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
-					};
-					7511D6781D97DCF1008016CF = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
-					};
-					7511D6861D97E04E008016CF = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
-					};
-				};
-			};
-			buildConfigurationList = 7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7511D6121D964A1D008016CF;
-			productRefGroup = 7511D61D1D964A1D008016CF /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				7511D61B1D964A1D008016CF /* TDRedux-iOS */,
-				7511D6861D97E04E008016CF /* TDRedux-macOS */,
-				7511D6781D97DCF1008016CF /* TDRedux-tvOS */,
-				7511D64E1D97CDCC008016CF /* TDRedux-watchOS */,
-				7511D6241D964A1D008016CF /* TDReduxTests-iOS */,
-				6C3A50EB1D98E49D00CFCCCE /* TDReduxTests-macOS */,
-				6C1323621D99073700665F4E /* TDReduxTests-tvOS */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		6C1323611D99073700665F4E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C3A50EA1D98E49D00CFCCCE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D61A1D964A1D008016CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6231D964A1D008016CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D64D1D97CDCC008016CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6771D97DCF1008016CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6851D97E04E008016CF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6C4A8C121D9CED400037265A /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-		};
-		6C4A8C131D9CED6D0037265A /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		6C4A8C141D9CED7B0037265A /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		6C4A8C151D9CED820037265A /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		6C4A8C161D9CED8A0037265A /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		753785DA1D9F2CC8004703E0 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		753785DB1D9F2CDB004703E0 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6C13235F1D99073700665F4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CFED2D21DB8A2680035F962 /* DispatchExtensionSpecs.swift in Sources */,
-				753785E31D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
-				753785DF1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
-				7591341C1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */,
-				753785D91D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
-				753785D51D9F26AF004703E0 /* StoreSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6C3A50E81D98E49D00CFCCCE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CFED2D11DB8A2670035F962 /* DispatchExtensionSpecs.swift in Sources */,
-				753785E21D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
-				753785DE1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
-				7591341B1DB605D1008AEF41 /* SubscribeExtensionSpecs.swift in Sources */,
-				753785D81D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
-				753785D41D9F26AE004703E0 /* StoreSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6171D964A1D008016CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CFED2D41DB8A5750035F962 /* Store+Dispatch.swift in Sources */,
-				7511D6371D964A3C008016CF /* Store.swift in Sources */,
-				7511D63C1D964BAA008016CF /* ReducerHelpers.swift in Sources */,
-				75A244D51DB9F4EE0005BE0F /* Types.swift in Sources */,
-				6C9AFBAC1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
-				7511D63A1D964B03008016CF /* Action.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6211D964A1D008016CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CFED2D51DB8A69E0035F962 /* DispatchExtensionSpecs.swift in Sources */,
-				753785E11D9FDF9B004703E0 /* MiddlewareSpec.swift in Sources */,
-				753785DD1D9F2EDE004703E0 /* CombineReducersSpec.swift in Sources */,
-				7591341A1DB605D0008AEF41 /* SubscribeExtensionSpecs.swift in Sources */,
-				753785D71D9F2B39004703E0 /* ReducerSpec.swift in Sources */,
-				753785D31D9F26AE004703E0 /* StoreSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D64A1D97CDCC008016CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75A244C91DB8D3C20005BE0F /* Store+Dispatch.swift in Sources */,
-				7511D6951D97E84D008016CF /* Action.swift in Sources */,
-				7511D6961D97E84D008016CF /* Store.swift in Sources */,
-				75A244D81DB9F9A10005BE0F /* Types.swift in Sources */,
-				6C9AFBAF1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
-				7511D6971D97E84D008016CF /* ReducerHelpers.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6741D97DCF1008016CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75A244C81DB8D3C10005BE0F /* Store+Dispatch.swift in Sources */,
-				7511D6921D97E847008016CF /* Action.swift in Sources */,
-				7511D6931D97E847008016CF /* Store.swift in Sources */,
-				75A244D71DB9F9A00005BE0F /* Types.swift in Sources */,
-				6C9AFBAE1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
-				7511D6941D97E847008016CF /* ReducerHelpers.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7511D6821D97E04E008016CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75A244C71DB8D3C00005BE0F /* Store+Dispatch.swift in Sources */,
-				7511D68F1D97E83F008016CF /* Action.swift in Sources */,
-				7511D6901D97E83F008016CF /* Store.swift in Sources */,
-				75A244D61DB9F99F0005BE0F /* Types.swift in Sources */,
-				6C9AFBAD1DB5A4FD00592817 /* Store+Subscribe.swift in Sources */,
-				7511D6911D97E83F008016CF /* ReducerHelpers.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin XCBuildConfiguration section */
-		6C13236B1D99073700665F4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
-				PRODUCT_NAME = "TDReduxTests-tvOS";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Debug;
-		};
-		6C13236C1D99073700665F4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
-				PRODUCT_NAME = "TDReduxTests-tvOS";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
-		6C3A50F51D98E49D00CFCCCE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		6C3A50F61D98E49D00CFCCCE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		7511D62E1D964A1D008016CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7511D62F1D964A1D008016CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7511D6311D964A1D008016CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-iOS";
-				PRODUCT_NAME = TDRedux;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		7511D6321D964A1D008016CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-iOS";
-				PRODUCT_NAME = TDRedux;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		7511D6341D964A1D008016CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
-				PRODUCT_NAME = "TDReduxTests-iOS";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		7511D6351D964A1D008016CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
-				PRODUCT_NAME = "TDReduxTests-iOS";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		7511D6551D97CDCC008016CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-watchOS";
-				PRODUCT_NAME = TDRedux;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		7511D6561D97CDCC008016CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-watchOS";
-				PRODUCT_NAME = TDRedux;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		7511D67E1D97DCF1008016CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-tvOS";
-				PRODUCT_NAME = TDRedux;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		7511D67F1D97DCF1008016CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-tvOS";
-				PRODUCT_NAME = TDRedux;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Release;
-		};
-		7511D68D1D97E04E008016CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-macOS";
-				PRODUCT_NAME = TDRedux;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		7511D68E1D97E04E008016CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-macOS";
-				PRODUCT_NAME = TDRedux;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		6C13236D1D99073700665F4E /* Build configuration list for PBXNativeTarget "TDReduxTests-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C13236B1D99073700665F4E /* Debug */,
-				6C13236C1D99073700665F4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6C3A50F41D98E49D00CFCCCE /* Build configuration list for PBXNativeTarget "TDReduxTests-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C3A50F51D98E49D00CFCCCE /* Debug */,
-				6C3A50F61D98E49D00CFCCCE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7511D6161D964A1D008016CF /* Build configuration list for PBXProject "TDRedux" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7511D62E1D964A1D008016CF /* Debug */,
-				7511D62F1D964A1D008016CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7511D6301D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDRedux-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7511D6311D964A1D008016CF /* Debug */,
-				7511D6321D964A1D008016CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7511D6331D964A1D008016CF /* Build configuration list for PBXNativeTarget "TDReduxTests-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7511D6341D964A1D008016CF /* Debug */,
-				7511D6351D964A1D008016CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7511D6541D97CDCC008016CF /* Build configuration list for PBXNativeTarget "TDRedux-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7511D6551D97CDCC008016CF /* Debug */,
-				7511D6561D97CDCC008016CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7511D6801D97DCF1008016CF /* Build configuration list for PBXNativeTarget "TDRedux-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7511D67E1D97DCF1008016CF /* Debug */,
-				7511D67F1D97DCF1008016CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7511D68C1D97E04E008016CF /* Build configuration list for PBXNativeTarget "TDRedux-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7511D68D1D97E04E008016CF /* Debug */,
-				7511D68E1D97E04E008016CF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 7511D6131D964A1D008016CF /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      OBJ_1 = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = OBJ_2;
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en",
+         );
+         mainGroup = OBJ_5;
+         productRefGroup = OBJ_15;
+         projectDirPath = ".";
+         targets = (
+            OBJ_17,
+         );
+      };
+      OBJ_10 = {
+         isa = "PBXFileReference";
+         path = "Store+Dispatch.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_11 = {
+         isa = "PBXFileReference";
+         path = "Store+Subscribe.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_12 = {
+         isa = "PBXFileReference";
+         path = "Store.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_13 = {
+         isa = "PBXFileReference";
+         path = "Types.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_14 = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_15 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_16,
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_16 = {
+         isa = "PBXFileReference";
+         path = "TDRedux.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_17 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_18;
+         buildPhases = (
+            OBJ_21,
+            OBJ_28,
+         );
+         dependencies = (
+         );
+         name = "TDRedux";
+         productName = "TDRedux";
+         productReference = OBJ_16;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_18 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_19,
+            OBJ_20,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_19 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/TDRedux_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "TDRedux";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "TDRedux";
+         };
+         name = "Debug";
+      };
+      OBJ_2 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_3,
+            OBJ_4,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_20 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/TDRedux_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "TDRedux";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "TDRedux";
+         };
+         name = "Release";
+      };
+      OBJ_21 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_22,
+            OBJ_23,
+            OBJ_24,
+            OBJ_25,
+            OBJ_26,
+            OBJ_27,
+         );
+      };
+      OBJ_22 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_8;
+      };
+      OBJ_23 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_9;
+      };
+      OBJ_24 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_10;
+      };
+      OBJ_25 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_11;
+      };
+      OBJ_26 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_12;
+      };
+      OBJ_27 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_13;
+      };
+      OBJ_28 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_3 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      OBJ_4 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      OBJ_5 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_6,
+            OBJ_7,
+            OBJ_14,
+            OBJ_15,
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      OBJ_6 = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_7 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_8,
+            OBJ_9,
+            OBJ_10,
+            OBJ_11,
+            OBJ_12,
+            OBJ_13,
+         );
+         name = "Sources";
+         path = "Sources";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_8 = {
+         isa = "PBXFileReference";
+         path = "Action.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_9 = {
+         isa = "PBXFileReference";
+         path = "ReducerHelpers.swift";
+         sourceTree = "<group>";
+      };
+   };
+   rootObject = OBJ_1;
 }
