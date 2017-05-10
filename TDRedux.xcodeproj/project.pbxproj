@@ -65,7 +65,7 @@
       };
       OBJ_16 = {
          isa = "PBXFileReference";
-         path = "StoreTests.swift";
+         path = "TDReduxTests.swift";
          sourceTree = "<group>";
       };
       OBJ_17 = {
@@ -92,7 +92,7 @@
             OBJ_24,
             OBJ_25,
          );
-         name = "spec 1.0.0";
+         name = "spec 1.1.0";
          path = ".build/checkouts/spec.swift.git--2530084168576953906/Sources";
          sourceTree = "SOURCE_ROOT";
       };
