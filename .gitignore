@@ -1,4 +1,5 @@
 tags
+xcov_report/
 
 docs/
 .build/
