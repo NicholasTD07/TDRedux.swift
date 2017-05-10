@@ -29,8 +29,9 @@ func subscriberSpec() {
 
         // There is a few ways to subscribe to a store, e.g. when there is a change
         // 1. subscribe to get a store
-        // 1. subscribe to get a store's state
-        // 1. subscribe with a converter to get a converted state
+        // 2. subscribe to get a store's state
+        // 3. subscribe with a converter to get a converted state
+        // 4. subscribe with a block takes no param
 
         $0.context("when subscribes to get a store") {
             var state: ToDoState?
@@ -74,6 +75,21 @@ func subscriberSpec() {
                 $0.before { store.dispatch(ToDoState.Action.addToDo("get milk")) }
 
                 $0.it("gets the change") { expect(todos!).toNot.beEmpty() }
+            }
+        }
+
+        $0.context("when subscribes with a block") {
+            var called: Int!
+
+            $0.before { called = 0 }
+            $0.before { store.subscribe { called! += 1 } }
+
+            $0.it("gets store's state") { expect(called) == 1 }
+
+            $0.context("when state changes") {
+                $0.before { store.dispatch(ToDoState.Action.addToDo("get milk")) }
+
+                $0.it("gets the change") { expect(called) == 2 }
             }
         }
     }
