@@ -16,10 +16,12 @@
             "en",
          );
          mainGroup = OBJ_5;
-         productRefGroup = OBJ_15;
+         productRefGroup = OBJ_26;
          projectDirPath = ".";
          targets = (
-            OBJ_17,
+            OBJ_30,
+            OBJ_42,
+            OBJ_56,
          );
       };
       OBJ_10 = {
@@ -45,6 +47,7 @@
       OBJ_14 = {
          isa = "PBXGroup";
          children = (
+            OBJ_15,
          );
          name = "Tests";
          path = "";
@@ -54,67 +57,44 @@
          isa = "PBXGroup";
          children = (
             OBJ_16,
+            OBJ_17,
          );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
+         name = "TDReduxTests";
+         path = "Tests/TDReduxTests";
+         sourceTree = "SOURCE_ROOT";
       };
       OBJ_16 = {
          isa = "PBXFileReference";
-         path = "TDRedux.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
+         path = "StoreTests.swift";
+         sourceTree = "<group>";
       };
       OBJ_17 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_18;
-         buildPhases = (
-            OBJ_21,
-            OBJ_28,
-         );
-         dependencies = (
-         );
-         name = "TDRedux";
-         productName = "TDRedux";
-         productReference = OBJ_16;
-         productType = "com.apple.product-type.framework";
+         isa = "PBXFileReference";
+         path = "ToDoRedux.swift";
+         sourceTree = "<group>";
       };
       OBJ_18 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
+         isa = "PBXGroup";
+         children = (
             OBJ_19,
-            OBJ_20,
          );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
       };
       OBJ_19 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "TDRedux.xcodeproj/TDRedux_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "TDRedux";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            TARGET_NAME = "TDRedux";
-         };
-         name = "Debug";
+         isa = "PBXGroup";
+         children = (
+            OBJ_20,
+            OBJ_21,
+            OBJ_22,
+            OBJ_23,
+            OBJ_24,
+            OBJ_25,
+         );
+         name = "spec 1.0.0";
+         path = ".build/checkouts/spec.swift.git--2530084168576953906/Sources";
+         sourceTree = "SOURCE_ROOT";
       };
       OBJ_2 = {
          isa = "XCConfigurationList";
@@ -126,73 +106,60 @@
          defaultConfigurationName = "Debug";
       };
       OBJ_20 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "TDRedux.xcodeproj/TDRedux_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "TDRedux";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            TARGET_NAME = "TDRedux";
-         };
-         name = "Release";
+         isa = "PBXFileReference";
+         path = "Extensions.swift";
+         sourceTree = "<group>";
       };
       OBJ_21 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_22,
-            OBJ_23,
-            OBJ_24,
-            OBJ_25,
-            OBJ_26,
-            OBJ_27,
-         );
+         isa = "PBXFileReference";
+         path = "Functions.swift";
+         sourceTree = "<group>";
       };
       OBJ_22 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_8;
+         isa = "PBXFileReference";
+         path = "Global.swift";
+         sourceTree = "<group>";
       };
       OBJ_23 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_9;
+         isa = "PBXFileReference";
+         path = "Matchers.swift";
+         sourceTree = "<group>";
       };
       OBJ_24 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_10;
+         isa = "PBXFileReference";
+         path = "Reporters.swift";
+         sourceTree = "<group>";
       };
       OBJ_25 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_11;
+         isa = "PBXFileReference";
+         path = "Types.swift";
+         sourceTree = "<group>";
       };
       OBJ_26 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_12;
+         isa = "PBXGroup";
+         children = (
+            OBJ_27,
+            OBJ_28,
+            OBJ_29,
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
       };
       OBJ_27 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_13;
+         isa = "PBXFileReference";
+         path = "spec.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
       };
       OBJ_28 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
+         isa = "PBXFileReference";
+         path = "TDRedux.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_29 = {
+         isa = "PBXFileReference";
+         path = "TDReduxTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
       };
       OBJ_3 = {
          isa = "XCBuildConfiguration";
@@ -227,6 +194,118 @@
          };
          name = "Debug";
       };
+      OBJ_30 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_31;
+         buildPhases = (
+            OBJ_34,
+            OBJ_41,
+         );
+         dependencies = (
+         );
+         name = "spec";
+         productName = "spec";
+         productReference = OBJ_27;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_31 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_32,
+            OBJ_33,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_32 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/spec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "spec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "spec";
+         };
+         name = "Debug";
+      };
+      OBJ_33 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/spec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "spec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "spec";
+         };
+         name = "Release";
+      };
+      OBJ_34 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_35,
+            OBJ_36,
+            OBJ_37,
+            OBJ_38,
+            OBJ_39,
+            OBJ_40,
+         );
+      };
+      OBJ_35 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_20;
+      };
+      OBJ_36 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_21;
+      };
+      OBJ_37 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_22;
+      };
+      OBJ_38 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_23;
+      };
+      OBJ_39 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_24;
+      };
       OBJ_4 = {
          isa = "XCBuildConfiguration";
          buildSettings = {
@@ -258,22 +337,278 @@
          };
          name = "Release";
       };
+      OBJ_40 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_25;
+      };
+      OBJ_41 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_42 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_43;
+         buildPhases = (
+            OBJ_46,
+            OBJ_53,
+         );
+         dependencies = (
+            OBJ_55,
+         );
+         name = "TDRedux";
+         productName = "TDRedux";
+         productReference = OBJ_28;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_43 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_44,
+            OBJ_45,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_44 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/TDRedux_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "TDRedux";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "TDRedux";
+         };
+         name = "Debug";
+      };
+      OBJ_45 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/TDRedux_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "TDRedux";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "TDRedux";
+         };
+         name = "Release";
+      };
+      OBJ_46 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_47,
+            OBJ_48,
+            OBJ_49,
+            OBJ_50,
+            OBJ_51,
+            OBJ_52,
+         );
+      };
+      OBJ_47 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_8;
+      };
+      OBJ_48 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_9;
+      };
+      OBJ_49 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_10;
+      };
       OBJ_5 = {
          isa = "PBXGroup";
          children = (
             OBJ_6,
             OBJ_7,
             OBJ_14,
-            OBJ_15,
+            OBJ_18,
+            OBJ_26,
          );
          path = "";
          sourceTree = "<group>";
+      };
+      OBJ_50 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_11;
+      };
+      OBJ_51 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_12;
+      };
+      OBJ_52 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_13;
+      };
+      OBJ_53 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            OBJ_54,
+         );
+      };
+      OBJ_54 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_27;
+      };
+      OBJ_55 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_30;
+      };
+      OBJ_56 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_57;
+         buildPhases = (
+            OBJ_60,
+            OBJ_63,
+         );
+         dependencies = (
+            OBJ_66,
+            OBJ_67,
+         );
+         name = "TDReduxTests";
+         productName = "TDReduxTests";
+         productReference = OBJ_29;
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      OBJ_57 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_58,
+            OBJ_59,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_58 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/TDReduxTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            TARGET_NAME = "TDReduxTests";
+         };
+         name = "Debug";
+      };
+      OBJ_59 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "TDRedux.xcodeproj/TDReduxTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            TARGET_NAME = "TDReduxTests";
+         };
+         name = "Release";
       };
       OBJ_6 = {
          isa = "PBXFileReference";
          explicitFileType = "sourcecode.swift";
          path = "Package.swift";
          sourceTree = "<group>";
+      };
+      OBJ_60 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_61,
+            OBJ_62,
+         );
+      };
+      OBJ_61 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_16;
+      };
+      OBJ_62 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_17;
+      };
+      OBJ_63 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            OBJ_64,
+            OBJ_65,
+         );
+      };
+      OBJ_64 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_27;
+      };
+      OBJ_65 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_28;
+      };
+      OBJ_66 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_30;
+      };
+      OBJ_67 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_42;
       };
       OBJ_7 = {
          isa = "PBXGroup";
