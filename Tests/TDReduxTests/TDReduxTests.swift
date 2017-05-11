@@ -95,6 +95,15 @@ func subscriberSpec() {
     }
 }
 
+func dispatchSpec() {
+    describe("dispatch") {
+        var store: Store<ToDoState>!
+
+        $0.before { store = Store<ToDoState>.init(with: todoReducer) }
+
+    }
+}
+
 class TDReduxTests: XCTestCase {
     func testStore() {
         storeSpec()

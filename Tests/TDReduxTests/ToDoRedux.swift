@@ -7,6 +7,11 @@ struct ToDoState: Equatable {
         case addToDo(ToDo)
         case filter(with: Filter)
     }
+    enum AsyncAction: TDRedux.Action {
+        case startedFetching
+        case fetched(todos: [ToDo])
+        case failed
+    }
     enum Filter {
         case all
         case done
@@ -28,4 +33,14 @@ let todoReducer = Reducer(initialState: ToDoState.initial) {
     case let .addToDo(todo): return ToDoState(todos: state.todos + [todo], filter: state.filter)
     case let .filter(filter): return ToDoState(todos: state.todos, filter: filter)
     }
+}
+
+func fetchToDosRemotely(dispatch: @escaping Store<ToDoState>.Dispatch) {
+    dispatch(ToDoState.AsyncAction.startedFetching)
+
+    let remoteFetching = {
+        dispatch(ToDoState.AsyncAction.fetched(todos: ["remote todo"]))
+    }
+
+    remoteFetching()
 }
