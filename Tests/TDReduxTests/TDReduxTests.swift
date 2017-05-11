@@ -101,6 +101,11 @@ func dispatchSpec() {
 
         $0.before { store = Store<ToDoState>.init(with: todoReducer) }
 
+        $0.context("aync actions") {
+            $0.before { store.dispatch(fetchToDosRemotely) }
+
+            $0.it("")
+        }
     }
 }
 
