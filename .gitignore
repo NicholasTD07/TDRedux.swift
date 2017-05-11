@@ -1,5 +1,6 @@
 tags
 xcov_report/
+.DS_Store
 
 docs/
 .build/
