@@ -8,7 +8,7 @@ func storeSpec() {
         var store: Store<ToDoState>!
 
         $0.context("when created") {
-            $0.before { store = Store<ToDoState>.init(with: todoReducer) }
+            $0.before { store = Store<ToDoState>.init(with: reducer) }
 
             $0.it("has the initial state") { expect(store.state) == ToDoState.initial }
 
@@ -25,7 +25,7 @@ func subscriberSpec() {
     describe("Subscriber") {
         var store: Store<ToDoState>!
 
-        $0.before { store = Store<ToDoState>.init(with: todoReducer) }
+        $0.before { store = Store<ToDoState>.init(with: reducer) }
 
         // There is a few ways to subscribe to a store, e.g. when there is a change
         // 1. subscribe to get a store
@@ -99,12 +99,15 @@ func dispatchSpec() {
     describe("dispatch") {
         var store: Store<ToDoState>!
 
-        $0.before { store = Store<ToDoState>.init(with: todoReducer) }
+        $0.before { store = Store<ToDoState>.init(with: reducer) }
 
         $0.context("aync actions") {
-            $0.before { store.dispatch(fetchToDosRemotely) }
+            $0.before { store.dispatch(asyncAction: fetchToDosRemotely) }
 
-            $0.it("")
+            // `array.reversed()[1]` is the same as `list[-2]` in python
+            $0.it("started fetching") { expect(store.state.fetchStates.reversed()[1]) == .started }
+            $0.it("fetches successfully") { expect(store.state.fetchStates.last) == .fetched }
+            $0.it("fetches remote todo") { expect(store.state.todos.last) == "remote todo" }
         }
     }
 }
@@ -113,5 +116,6 @@ class TDReduxTests: XCTestCase {
     func testStore() {
         storeSpec()
         subscriberSpec()
+        dispatchSpec()
     }
 }
