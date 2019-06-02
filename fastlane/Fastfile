@@ -40,7 +40,7 @@ platform :macos do
   end
 end
 
-platform :watchOS do
+platform :watchos do
   desc "Run tests on watchOS"
   lane :test do
     scan(
@@ -52,7 +52,7 @@ platform :watchOS do
   end
 end
 
-platform :tvOS do
+platform :tvos do
   desc "Run tests on tvOS"
   lane :test do
     scan(
