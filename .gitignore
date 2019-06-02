@@ -1,3 +1,11 @@
+Carthage/Build
+Carthage/Checkouts
+
+Pods/
+
+fastlane/report.*
+fastlane/test_output/
+
 docs/
 .build/
 build/
@@ -17,8 +25,3 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-
-Carthage/Build
-Carthage/Checkouts
-
-Pods/
