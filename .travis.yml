@@ -7,11 +7,7 @@ env:
 install:
   - bundle install
   - carthage checkout
-script:
-  - bundle exec fastlane ios test
-  - bundle exec fastlane macos test
-  - bundle exec fastlane watchos test
-  - bundle exec fastlane tvos test
+script: ./scripts/test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

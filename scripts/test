@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+bundle exec fastlane ios test
+bundle exec fastlane macos test
+bundle exec fastlane watchos test
+bundle exec fastlane tvos test
