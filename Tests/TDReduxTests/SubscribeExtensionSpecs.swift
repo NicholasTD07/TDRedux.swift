@@ -24,6 +24,7 @@ class SubscribeExtensionSpecs: QuickSpec {
                 var todos: [ToDoState.ToDo]!
 
                 beforeEach {
+                    // swiftlint:disable:next multiple_closures_with_trailing_closure
                     store.subscribe(withConverter: { $0.todos }) { storesToDos in
                         todos = storesToDos
                     }
@@ -86,8 +87,7 @@ class SubscribeExtensionSpecs: QuickSpec {
     }
 }
 
-private let reducer = Reducer(initialState: ToDoState.initial) {
-    (state, action: ToDoActions) -> ToDoState in
+private let reducer = Reducer(initialState: ToDoState.initial) { (state, action: ToDoActions) -> ToDoState in
     switch action {
     case .addToDo(let todo):
         return ToDoState(todos: state.todos + [todo], filter: state.filter)

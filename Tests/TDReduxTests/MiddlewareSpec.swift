@@ -41,9 +41,7 @@ class MiddlewareSpec: QuickSpec {
                 }
 
                 it("gets the initial action") {
-                    // swiftlint:disable force_cast
                     expect(dispatchedAction as? InitialAction).toNot(beNil())
-                    // swiftlint:enable force_cast
                 }
 
                 context("when dispatched an action") {
@@ -52,9 +50,7 @@ class MiddlewareSpec: QuickSpec {
                     }
 
                     it("gets the action") {
-                        // swiftlint:disable force_cast
                         expect(dispatchedAction as? SomeAction).toNot(beNil())
-                        // swiftlint:enable force_cast
                     }
 
                     it("gets the reduced state") {
@@ -76,7 +72,7 @@ class MiddlewareSpec: QuickSpec {
                 }
 
                 store = Store.init(
-                    with: Reducer(initialState: 0) { (state, action: Action) in return state },
+                    with: Reducer(initialState: 0) { (state, _: Action) in return state },
                     middlewares: [
                         record(with: "a"),
                         record(with: "b"),

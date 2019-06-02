@@ -30,18 +30,17 @@ extension Store {
     /// - parameter store: A Store
     ///
     /// - returns: Void
-    public typealias Subscriber = (_ store: Store) -> ()
+    public typealias Subscriber = (_ store: Store) -> Void
 
     /// Subscribe to changes of a *Store*'s *State*
     ///
     /// - parameter state:  A State
     ///
     /// - returns: Void
-    public typealias StateSubscriber = (_ state: State) -> ()
-
+    public typealias StateSubscriber = (_ state: State) -> Void
 
     /// Gets called every time when the *State* of a *Store* changes
-    public typealias UpdateSubscriber = () -> ()
+    public typealias UpdateSubscriber = () -> Void
 }
 
 // MARK: - Dispatcher, Dispatch, Middleware and AsyncAction
@@ -55,7 +54,6 @@ extension Store {
     /// - returns: Void
     public typealias Dispatcher = (_ store: Store, _ action: Action) -> Void
 
-
     /// It provides a third-party extension point between dispatching an action,
     /// and the moment it reaches the reducer.
     public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
@@ -65,12 +63,12 @@ extension Store {
     /// - parameter action: An Action will be dispatched to the binded Store
     ///
     /// - returns: Void
-    public typealias Dispatch = (_ action: Action) -> ()
+    public typealias Dispatch = (_ action: Action) -> Void
 
     /// Async actions can call the dispatch function
     ///
     /// - parameter dispatch: a Dispatch function
     ///
     /// - returns: Void
-    public typealias AsyncAction = (_ dispath: @escaping Store.Dispatch) -> ()
+    public typealias AsyncAction = (_ dispath: @escaping Store.Dispatch) -> Void
 }

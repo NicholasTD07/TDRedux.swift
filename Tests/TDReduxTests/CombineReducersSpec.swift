@@ -12,11 +12,13 @@ import Nimble
 import TDRedux
 
 class CombineReducersSpec: QuickSpec {
-    // swiftlint:disable function_body_length
+    // swiftlint:disable:next function_body_length
     override func spec() {
         // swiftlint:disable nesting
         enum Reducers: String {
+            // swiftlint:disable:next identifier_name
             case a
+            // swiftlint:disable:next identifier_name
             case b
             case anotherA
         }
@@ -28,26 +30,23 @@ class CombineReducersSpec: QuickSpec {
         describe("combineReducers") {
             var calledReducers: [Reducers]!
 
-            let aReducer = Reducer(initialState: 0) {
-                (state, action: ActionA) in
+            let aReducer = Reducer(initialState: 0) { (state, _: ActionA) in
                 calledReducers.append(.a)
                 return state
             }
 
-            let bReducer = Reducer(initialState: 0) {
-                (state, action: ActionB) in
+            let bReducer = Reducer(initialState: 0) { (state, _: ActionB) in
                 calledReducers.append(.b)
                 return state
             }
 
-            let anotherAReducer = Reducer(initialState: 0) {
-                (state, action: ActionA) in
+            let anotherAReducer = Reducer(initialState: 0) { (state, _: ActionA) in
                 calledReducers.append(.anotherA)
                 return state
             }
 
             let store = Store<Int>.init(with:
-                combine(reducers:[
+                combine(reducers: [
                     aReducer,
                     bReducer,
                     anotherAReducer,
@@ -95,5 +94,4 @@ class CombineReducersSpec: QuickSpec {
             }
         }
     }
-    // swiftlint:enable function_body_length
 }

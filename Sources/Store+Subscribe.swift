@@ -18,7 +18,6 @@ extension Store {
         }
     }
 
-
     /// The given *UpdateSubscriber* will be called
     /// when the *State* of a *Store* changes
     ///
@@ -37,7 +36,7 @@ extension Store {
     /// - parameter subscriber: A SpecificStateSubscriber function
     public func subscribe<SpecificState>(
         withConverter converter: @escaping (State) -> SpecificState,
-        subscriber: @escaping (SpecificState) -> ()
+        subscriber: @escaping (SpecificState) -> Void
     ) {
         self.subscribe { state in
             subscriber(converter(state))

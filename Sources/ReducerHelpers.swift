@@ -6,6 +6,7 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
+// swiftlint:disable identifier_name
 // TODO: Use Callable values rather than a function
 // Ref https://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md
 /// Wraps reducers taking non-optional `State` and `SpecificActionType`
@@ -32,6 +33,7 @@ public func Reducer<State, SpecificActionType>(
         return reducer(state, action)
     }
 }
+// swiftlint:enable identifier_name
 
 /// Takes an array of `Reducer`s and combine them into one
 ///

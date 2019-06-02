@@ -66,7 +66,7 @@ class DispatchExtensionSpecs: QuickSpec {
 private typealias Store = TDRedux.Store<State>
 
 private let reducer = TDRedux.Reducer(initialState: State.initial) {
-    (state, action: Actions) in
+    (_, action: Actions) in
     switch action {
     case let .fetchPosts(action):
         switch action {
