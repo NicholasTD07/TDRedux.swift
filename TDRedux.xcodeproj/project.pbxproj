@@ -67,6 +67,8 @@
 /* Begin PBXFileReference section */
 		6C1323631D99073700665F4E /* TDReduxTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3A50EC1D98E49D00CFCCCE /* TDReduxTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDReduxTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4D6D3F22A47EFD005DE032 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		6C4D6D4122A47F3C005DE032 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		6C74E5841D9DF78000F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		6C74E5851D9DF78000F9742C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		6C74E5881D9DF79300F9742C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Checkouts/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
@@ -157,6 +159,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C4D6D4022A47F02005DE032 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C4D6D3F22A47EFD005DE032 /* Debug.xcconfig */,
+				6C4D6D4122A47F3C005DE032 /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		6C74E5831D9DF78000F9742C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +197,7 @@
 		7511D6121D964A1D008016CF = {
 			isa = PBXGroup;
 			children = (
+				6C4D6D4022A47F02005DE032 /* Config */,
 				7511D61E1D964A1D008016CF /* TDRedux */,
 				7511D6291D964A1D008016CF /* Tests */,
 				7511D61D1D964A1D008016CF /* Products */,
@@ -454,6 +466,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7511D6121D964A1D008016CF;
@@ -784,6 +797,7 @@
 		};
 		7511D62E1D964A1D008016CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4D6D3F22A47EFD005DE032 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -836,6 +850,7 @@
 		};
 		7511D62F1D964A1D008016CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C4D6D4122A47F3C005DE032 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
