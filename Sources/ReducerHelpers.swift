@@ -6,9 +6,10 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
-// swiftlint:disable identifier_name
 // TODO: Use Callable values rather than a function
 // Ref https://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md
+
+// swiftlint:disable identifier_name
 /// Wraps reducers taking non-optional `State` and `SpecificActionType`
 /// to take optional `State` and `Any` as its `action` param
 ///
@@ -40,7 +41,7 @@ public func Reducer<State, SpecificActionType>(
 /// - parameter reducers: an array of `Reducer`s who takes and returns the same type of `State`
 ///
 /// - returns: A Reducer function
-public func combine<State>(reducers: [(State?, Any) -> State]) -> (State?, Any) -> State {
+public func combined<State>(reducers: [(State?, Any) -> State]) -> (State?, Any) -> State {
     return { (state: State?, action: Any) -> State in
         let reducedState = reducers.reduce(state) { (state, reducer) -> State in
             return reducer(state, action)

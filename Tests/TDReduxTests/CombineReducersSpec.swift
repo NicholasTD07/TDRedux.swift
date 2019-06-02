@@ -46,7 +46,7 @@ class CombineReducersSpec: QuickSpec {
             }
 
             let store = Store<Int>.init(with:
-                combine(reducers: [
+                combined(reducers: [
                     aReducer,
                     bReducer,
                     anotherAReducer,
