@@ -90,8 +90,7 @@ private enum CounterActions: TDRedux.Action {
 private typealias State = Int
 private typealias IntStore = TDRedux.Store<State>
 
-private let counterReducer = Reducer(initialState: 0) {
-    (state: State, action: CounterActions) -> Int in
+private let counterReducer = Reducer(initialState: 0) { (state: State, action: CounterActions) -> Int in
     switch action {
     case .increase:
         return state + 1

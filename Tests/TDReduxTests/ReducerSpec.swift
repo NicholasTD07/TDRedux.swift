@@ -21,8 +21,7 @@ class ReducerSpec: QuickSpec {
         describe("Reducer") {
             var called: Bool!
 
-            let store = Store<Int>.init(with: Reducer(initialState: 0) {
-                (state: Int, action: SpecificAction) in
+            let store = Store<Int>.init(with: Reducer(initialState: 0) { (state: Int, _: SpecificAction) in
                 called = true
 
                 return state
