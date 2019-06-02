@@ -6,6 +6,8 @@
 //  Copyright © 2016 nicktd. All rights reserved.
 //
 
+// TODO: Use Callable values rather than a function
+// Ref https://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md
 /// Wraps reducers taking non-optional `State` and `SpecificActionType`
 /// to take optional `State` and `Any` as its `action` param
 ///
