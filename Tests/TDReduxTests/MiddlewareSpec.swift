@@ -23,7 +23,7 @@ class MiddlewareSpec: QuickSpec {
                 var reducedState: Int!
                 var dispatchedAction: Action!
 
-                let recoder: Store.Middleware = { dispatcher in
+                let recorder: Store.Middleware = { dispatcher in
                     return { store, action in
                         dispatchedAction = action
                         dispatcher(store, action)
@@ -36,7 +36,7 @@ class MiddlewareSpec: QuickSpec {
                         with: Reducer(initialState: 0) { (_, _: SomeAction) in
                             return 100
                         },
-                        middlewares: [recoder]
+                        middlewares: [recorder]
                     )
                 }
 
@@ -62,7 +62,7 @@ class MiddlewareSpec: QuickSpec {
             context("when dispatched an action") {
                 var middlewares = [String]()
 
-                func record(with identifier: String) -> Store.Middleware {
+                func recorder(named identifier: String) -> Store.Middleware {
                     return { dispatch in
                         return { store, action in
                             middlewares.append(identifier)
@@ -74,9 +74,9 @@ class MiddlewareSpec: QuickSpec {
                 store = Store.init(
                     with: Reducer(initialState: 0) { (state, _: Action) in return state },
                     middlewares: [
-                        record(with: "a"),
-                        record(with: "b"),
-                        record(with: "c"),
+                        recorder(named: "a"),
+                        recorder(named: "b"),
+                        recorder(named: "c"),
                     ]
                 )
 
