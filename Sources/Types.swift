@@ -56,6 +56,8 @@ extension Store {
 
     /// It provides a third-party extension point between dispatching an action,
     /// and the moment it reaches the reducer.
+    ///
+    /// - Requires: Middlewares **MUST** call the Dispatcher that's passed in.
     public typealias Middleware = (@escaping Dispatcher) -> Dispatcher
 
     /// Dispatches the given *Action* to the binded *Store*
