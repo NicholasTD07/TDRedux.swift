@@ -9,3 +9,5 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+//:configuration = Debug
+SWIFT_VERSION = 5.0

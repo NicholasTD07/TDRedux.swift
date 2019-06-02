@@ -743,7 +743,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
 				PRODUCT_NAME = "TDReduxTests-tvOS";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
@@ -758,7 +757,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-tvOS";
 				PRODUCT_NAME = "TDReduxTests-tvOS";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
@@ -775,7 +773,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -791,7 +788,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -911,7 +907,6 @@
 				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -931,7 +926,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicktd.TDRedux-iOS";
 				PRODUCT_NAME = TDRedux;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -944,7 +938,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
 				PRODUCT_NAME = "TDReduxTests-iOS";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -957,7 +950,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickTD.TDReduxTests-iOS";
 				PRODUCT_NAME = "TDReduxTests-iOS";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -977,7 +969,6 @@
 				PRODUCT_NAME = TDRedux;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -999,7 +990,6 @@
 				PRODUCT_NAME = TDRedux;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1020,7 +1010,6 @@
 				PRODUCT_NAME = TDRedux;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1041,7 +1030,6 @@
 				PRODUCT_NAME = TDRedux;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1066,7 +1054,6 @@
 				PRODUCT_NAME = TDRedux;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1089,7 +1076,6 @@
 				PRODUCT_NAME = TDRedux;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
