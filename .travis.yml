@@ -1,17 +1,25 @@
 language: objective-c
 osx_image: xcode10.3
 cache:
-    directories:
-      - /nix/
+  directories:
+    - $HOME/nix.store
 env:
   global:
-  - LC_CTYPE=en_US.UTF-8
-  - LANG=en_US.UTF-8
+    - LC_CTYPE=en_US.UTF-8
+    - LANG=en_US.UTF-8
+before_install:
+  - sudo mkdir -p /etc/nix
+  - echo "substituters = https://cache.nixos.org/ file://$HOME/nix.store" | sudo tee -a /etc/nix/nix.conf > /dev/null
+  - echo 'require-sigs = false' | sudo tee -a /etc/nix/nix.conf > /dev/null
 install:
   - curl https://nixos.org/nix/install | sh
   - source ~/.nix-profile/etc/profile.d/nix.sh
   - carthage checkout
 script: nix-shell --pure --run ./scripts/test
+
+before_cache:
+  - mkdir -p $HOME/nix.store
+  - nix copy --to file://$HOME/nix.store -f default.nix buildInputs
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -f ./fastlane/test_output/
