@@ -5,9 +5,9 @@ env:
   - LC_CTYPE=en_US.UTF-8
   - LANG=en_US.UTF-8
 install:
-  - bundle install
+  - curl https://nixos.org/nix/install | sh
   - carthage checkout
-script: ./scripts/test
+script: nix-shell --pure --run ./scripts/test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -f ./fastlane/test_output/
